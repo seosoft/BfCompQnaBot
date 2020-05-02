@@ -96,16 +96,9 @@
 
    <img src="./images/01/bfcomp_yarn_firstrun.jpg" width="480px" />
 
-8. (オプション) ngrok インストール  
+8. ngrok インストール  
    [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
    インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
-   このハンズオンの範囲では ngrok は不要ですが、
-  
-   - Azure に発行した Bot アプリケーションに Bot Framework Emulator から接続する
-   - OAuth を利用する
-
-   などの場合に ngrok が必要になります。  
-   このタイミングでローカル PC にインストールすることをお勧めします。
 
 以上で、Bot Framework Composer で Bot 開発する準備できました。
 
@@ -141,17 +134,9 @@
 
    <img src="./images/01/bfcomp_firstrun.jpg" width="480px" />
 
-5. (オプション) ngrok インストール  
+5. ngrok インストール  
    [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
-   インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
-   このハンズオンの範囲では ngrok は不要ですが、
-  
-   - Azure に発行した Bot アプリケーションに Bot Framework Emulator から接続する
-   - OAuth を利用する
-
-   などの場合に ngrok が必要になります。  
-   このタイミングでローカル PC にインストールすることをお勧めします。
-
+   インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。 
 6. (オプション) Visual Studio Code インストール  
    [Visual Studio Code](https://code.visualstudio.com/) をダウンロードしてインストールします。  
    このハンズオンの範囲では VSCode のインストールは必須ではありませんが、Bot Framework 開発を勧めると必要になることがあります。  
@@ -166,5 +151,5 @@
 以上で、Bot Framework Composer のインストールが完了しました。  
 次のステップでは、Composer を使って実際に Bot アプリケーションを開発します。
 
-次のステップ（）に進む  
-[目次に戻る](./../README.md)
+[次に進む](02_create_qnamaker_knowledgebase.md)  
+[目次に戻る](../README.md)
