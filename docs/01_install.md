@@ -41,17 +41,20 @@
    <img src="./images/01/yarn_install_warning1.jpg" width="400px" />
    <img src="./images/01/yarn_install_warning2.jpg" width="400px" />
 
-5. .NET Core 3.1 インストール
+5. .NET Core 3.1 インストール  
    [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) をダウンロードしてインストールします。
 
-6. Bot Framework Emulator インストール
+6. Bot Framework Emulator インストール  
    [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/releases) 最新版をダウンロードしてインストールします。  
    Bot Framework Emulator は Bot 開発時にテスト用クライアントとして使用します。
 
 7. Bot Framework Composer ソースコード入手およびビルド  
+
    7-1. コマンドプロンプト、PowerShell または Git Bash を開きます。(Windows の場合)  
    その他の OS ではターミナルクライアントを開きます。  
+
    7-2. Bot Framework Composer をインストールするために任意のフォルダーに移動します。  
+
    7-3. GitHub のリポジトリからソースコードをクローンまたはダウンロードします。  
 
    ```cmd
@@ -80,17 +83,16 @@
 
    <img src="./images/01/yarn_build.jpg" width="480px" />
 
-   7-7. Bot Framework Composer サーバー起動  
-   Bot Framework Composer サーバーを起動します。
+   7-7. Bot Framework Composer サーバー起動します。
 
    ```cmd
    yarn startall
    ```
 
    > 一度 Bot Framework Composer のインストールに成功した環境では、ビルドまでの手順は不要です。  
-   > "yarn startall" で Bot Framework Composer を起動できます。
+   > 以後は "yarn startall" で Bot Framework Composer を起動できます。
 
-   7-8. Bot Framework Composer にブラウザーで接続  
+   7-8. Bot Framework Composer を開きます。  
    Web ブラウザーを起動して "**http://localhost:3000**" に接続します。  
    Bot Framework Composer アプリケーションが表示されます。
 
@@ -149,7 +151,7 @@
 ---
 
 以上で、Bot Framework Composer のインストールが完了しました。  
-次のステップでは、Composer を使って実際に Bot アプリケーションを開発します。
+次のステップでは、Bot Framework Composer 操作の超基礎を理解するために、Echo Bot を作ります。
 
-[次に進む](02_create_qnamaker_knowledgebase.md)  
+[次に進む](02_composer_basic.md)  
 [目次に戻る](../README.md)
