@@ -125,5 +125,5 @@ Bot は期待通りに動作しました。
 以上で、Bot Framework Composer の基礎的な操作方法をりかいするためにオウム返し Bot を作りました。  
 次のステップでは、Echo Bot に二つの機能を追加することで、Bot Framework Composer の理解を深めます。
 
-[前に戻る](01_install.md) | 次に進む  
+[前に戻る](01_install.md) | [次に進む](03_composer_basic2.md)  
 [目次に戻る](../README.md)
