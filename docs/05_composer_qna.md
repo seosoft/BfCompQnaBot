@@ -118,6 +118,8 @@ QnA Maker への接続情報は **Settings ファイル** に記述します。
 
    <img src="./images/05/comp_settings_qn.jpg" width="540px" />
 
+> Settings ファイルから分かる通り、Bot Framework Compmoser では "Connect to QnA Knowledgebase" を利用した QnA Maker 利用は一つのナレッジベースのみ接続可能です。  
+> 複数のナレッジベースを呼び出したい場合は "Send an HTTP Request" アクションを使うなどの工夫が必要です。
 
 ---
 
