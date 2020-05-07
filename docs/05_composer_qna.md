@@ -147,7 +147,8 @@ Bot Framework Emulator を使って動作確認します。
 
 以上で Bot アプリケーションに Q&A 機能を実装しました。
 
-次のステップでは Bot アプリケーションで LUIS (LUIS) を利用して、自然言語のより高度な処理を追加します。
+[Bot Framework Composer の基礎 - 2](03_composer_basic2.md) では、正規表現でユーザーの意図を認識しました。  
+次のステップでは Bot アプリケーションで **LUIS** (Language UnderstandingLanguage Understanding) を利用して、ユーザーの意図を予測します。  
 
 [前に戻る](04_create_qnamaker_knowledgebase.md) | [次に進む](06_composer_luis.md)  
 [目次に戻る](../README.md)

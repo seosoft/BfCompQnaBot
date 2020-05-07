@@ -7,7 +7,7 @@
 3. [Bot Framework Composer の基礎 - 2 (機能追加)](./docs/03_composer_basic2.md)  
 4. [QnA Maker でナレッジベース作成](./docs/04_create_qnamaker_knowledgebase.md)  
 5. [Bot アプリケーションに Q&A 機能を実装](./docs/05_composer_qna.md)  
-6. LUIS でより高度な自然言語処理（予定）  
+6. [LUIS でユーザーの意図を予測する](./docs/06_composer_luis.md)    
 7. QnA Bot アプリケーションをクラウドに配置（予定）
 
 ---
