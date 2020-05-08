@@ -164,5 +164,5 @@ Q&A Bot アプリケーションの開発はここで終わりです。
 
 次のステップでは開発した Bot アプリケーションを Azure に配置します。
 
-[前に戻る](05_composer_qna.md) | 次に進む  
+[前に戻る](05_composer_qna.md) | [次に進む](07_deploy_to_azure.md)  
 [目次に戻る](../README.md)

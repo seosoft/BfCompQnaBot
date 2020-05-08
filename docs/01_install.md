@@ -102,6 +102,15 @@
    [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
    インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
 
+   > ngrok は、このハンズオンでは [ステップ 6](06_composer_luis.md) までの Bot アプリケーション開発の範囲では不要です。  
+   > [ステップ 7](07_deploy_to_azure.md) で使用します。
+   >
+   > Bot Framework Composer で開発する場合、以下のケースで ngrok が必要になります。
+   >
+   > - Azure に発行した Bot アプリケーションを Bot Framework Emulator でテストしたい場合
+   > - OAuth で認証したい場合
+   > - ローカルで実行している Bot アプリケーションに外部のクライアントから接続したい場合
+
 以上で、Bot Framework Composer で Bot 開発する準備できました。
 
 [ページ先頭に戻る](#開発環境の構築)
@@ -138,7 +147,17 @@
 
 5. ngrok インストール  
    [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
-   インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。 
+   インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
+
+   > ngrok は、このハンズオンでは [ステップ 6](06_composer_luis.md) までの Bot アプリケーション開発の範囲では不要です。  
+   > [ステップ 7](07_deploy_to_azure.md) で使用します。
+   >
+   > Bot Framework Composer で開発する場合、以下のケースで ngrok が必要になります。
+   >
+   > - Azure に発行した Bot アプリケーションを Bot Framework Emulator でテストしたい場合
+   > - OAuth で認証したい場合
+   > - ローカルで実行している Bot アプリケーションに外部のクライアントから接続したい場合
+
 6. (オプション) Visual Studio Code インストール  
    [Visual Studio Code](https://code.visualstudio.com/) をダウンロードしてインストールします。  
    このハンズオンの範囲では VSCode のインストールは必須ではありませんが、Bot Framework 開発を勧めると必要になることがあります。  
