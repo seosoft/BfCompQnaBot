@@ -38,8 +38,8 @@
    インストール時に警告画面が表示されることがあります。  
    [詳細情報] - [実行] でインストールを実行します。
 
-   <img src="./images/01/yarn_install_warning1.jpg" width="400px" />
-   <img src="./images/01/yarn_install_warning2.jpg" width="400px" />
+   <img src="./images/rev0/01/yarn_install_warning1.jpg" width="400px" />
+   <img src="./images/rev0/01/yarn_install_warning2.jpg" width="400px" />
 
 5. .NET Core 3.1 インストール  
    [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) をダウンロードしてインストールします。
@@ -81,7 +81,7 @@
    yarn build
    ```
 
-   <img src="./images/01/yarn_build.jpg" width="480px" />
+   <img src="./images/rev0/01/yarn_build.jpg" width="480px" />
 
    7-7. Bot Framework Composer サーバー起動します。
 
@@ -96,7 +96,7 @@
    Web ブラウザーを起動して "**http://localhost:3000**" に接続します。  
    Bot Framework Composer アプリケーションが表示されます。
 
-   <img src="./images/01/bfcomp_yarn_firstrun.jpg" width="480px" />
+   <img src="./images/rev0/01/bfcomp_yarn_firstrun.jpg" width="480px" />
 
 8. ngrok インストール  
    [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
@@ -137,13 +137,13 @@
    インストール時に警告画面が表示されることがあります。  
    [詳細情報] - [実行] でインストールを実行します。
 
-   <img src="./images/01/bfcomp_install_warning1.jpg" width="400px" />
-   <img src="./images/01/bfcomp_install_warning2.jpg" width="400px" />
+   <img src="./images/rev0/01/bfcomp_install_warning1.jpg" width="400px" />
+   <img src="./images/rev0/01/bfcomp_install_warning2.jpg" width="400px" />
 
 4. Bot Framework Composer 起動確認  
    確認のために Bot Framework Composer を起動します。
 
-   <img src="./images/01/bfcomp_firstrun.jpg" width="480px" />
+   <img src="./images/rev0/01/bfcomp_firstrun.jpg" width="480px" />
 
 5. ngrok インストール  
    [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  

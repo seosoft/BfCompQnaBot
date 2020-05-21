@@ -44,7 +44,7 @@ Bot Framework Composer で開発したアプリケーションを Azure に配�
 
 2. [**Create Azure Resources**] をクリックします。
 
-   <img src="./images/07/comp_publish_create_resources.jpg" width="480px" />
+   <img src="./images/rev0/07/comp_publish_create_resources.jpg" width="480px" />
 
    > [**Create Azure Resources**] はプロジェクトごとに最初の一回だけ必要な操作です。  
    > Bot を変更・修正して再度発行する場合には不要です。
@@ -64,11 +64,11 @@ Bot Framework Composer で開発したアプリケーションを Azure に配�
    > 名前を入力するタイミングでは重複チェックは実行されません。自分の名前や日付を使った名前を付けることをお勧めします。
 
    <br />
-   <img src="./images/07/comp_create_resources_name_and_pw.jpg" width="540px" />
+   <img src="./images/rev0/07/comp_create_resources_name_and_pw.jpg" width="540px" />
 
 4. [**Create Azure Resources**] で [**Copy to Clipboard**] をクリックします。
 
-   <img src="./images/07/comp_publish_create_script.jpg" width="540px" />
+   <img src="./images/rev0/07/comp_publish_create_script.jpg" width="540px" />
 
 5. "**PowerShell**" を起動して Azure にログインします。
 
@@ -94,13 +94,13 @@ Bot Framework Composer で開発したアプリケーションを Azure に配�
    > 環境によっては "Done" メッセージが見えないかもしれません。  
    > 数分間待ってメッセージが表示されなければ、**プロンプトの位置** を確認します。  
    >
-   > <img src="./images/07/pwsh_prompt.jpg" width="440px" />
+   > <img src="./images/rev0/07/pwsh_prompt.jpg" width="440px" />
    >
    > 数行の空行のあとにプロンプトが表示されていれば、空行の部分をコピーしてメモ帳などに貼り付けてみてください。
 
 7. [**Next**] をクリックします。
 
-   <img src="./images/07/comp_publish_next.jpg" width="540px" />
+   <img src="./images/rev0/07/comp_publish_next.jpg" width="540px" />
 
 ---
 
@@ -115,15 +115,15 @@ Bot Framework Composer で開発したアプリケーションを Azure に配�
 
 2. 検索結果から "**App Service プラン**" を選択します。
 
-   <img src="./images/07/azure_search_appservice_plan.jpg" width="540px" />
+   <img src="./images/rev0/07/azure_search_appservice_plan.jpg" width="540px" />
 
 3. [**スケールアップ**] を選択します。
 
-   <img src="./images/07/azure_navi_scale_up.jpg" width="480px" />
+   <img src="./images/rev0/07/azure_navi_scale_up.jpg" width="480px" />
 
 4. [**開発/テスト**] - [**F1**] を選択して [**適用**] をクリックします。
 
-   <img src="./images/07/azure_appservice_plan_f1.jpg" width="480px" />
+   <img src="./images/rev0/07/azure_appservice_plan_f1.jpg" width="480px" />
 
 ---
 
@@ -134,15 +134,15 @@ Bot アプリケーションを Azure に発行します。
 1. Bot Framwork Composer に戻ると、[**Publish your Bot**] ダイアログが表示されています。  
    [**Copy to Clipboard**] をクリックして、スクリプトをクリップボードにコピーします。
 
-   <img src="./images/07/comp_publish_your_bot.jpg" width="540px" />
+   <img src="./images/rev0/07/comp_publish_your_bot.jpg" width="540px" />
 
    > Bot Framework Composer を閉じてしまった場合、また Azure への発行が二度目以降の場合は、[**Settings**] - [**Settings**] - [**Publish Bot to Azure**] を選択します。  
    > 続いて [**Set bot name and password**] で、前の手順で作成した Bot の表示名、および "Environment Name" を入力してください。  
    > [Publish your Bot] ダイアログが表示されます。
    >
-   > <img src="./images/07/comp_settings_publish_publish.jpg" width="400px" />
+   > <img src="./images/rev0/07/comp_settings_publish_publish.jpg" width="400px" />
    > <br />
-   > <img src="./images/07/comp_set_name_and_pw.jpg" width="400px" />   
+   > <img src="./images/rev0/07/comp_set_name_and_pw.jpg" width="400px" />   
 
 2. PowerShell クリップボードにコピーしたスクリプトを貼り付けて実行します。
 
@@ -156,19 +156,19 @@ Bot アプリケーションを Azure に発行します。
 
 2. 検索結果から "**App Service**" を選択します。
 
-   <img src="./images/07/azure_search_appservicejpg.jpg" width="540px" />
+   <img src="./images/rev0/07/azure_search_appservicejpg.jpg" width="540px" />
 
 3. App Service の [**URL**] をメモ帳などに記録しておきます。
 
-   <img src="./images/07/azure_appservice_url.jpg" width="540px" />
+   <img src="./images/rev0/07/azure_appservice_url.jpg" width="540px" />
 
 4. [**構成**] を選択して [**高度な編集**] をクリックします。
 
-   <img src="./images/07/azure_appservice_showsettings.jpg" width="540px" />
+   <img src="./images/rev0/07/azure_appservice_showsettings.jpg" width="540px" />
 
 5. "MicrosoftAppId" の値、および "MicrosoftAppPassword" の値をメモ帳などに記録しておきます。
 
-   <img src="./images/07/azure_appservice_appid_pw.jpg" width="540px" />
+   <img src="./images/rev0/07/azure_appservice_appid_pw.jpg" width="540px" />
 
 ---
 
@@ -183,13 +183,13 @@ Bot アプリケーションを Azure に発行します。
    さらに "**Bypass ngrokfor local address**", "**Run ngrok after the Emulator starts up**" のチェックボックスを選択ます。  
    最後に [**Save**] をクリックします。
  
-   <img src="./iages/07/../../images/07/emu_ngrok_settings.jpg" width="540px" />
+   <img src="./iages/07/../../images/rev0/07/emu_ngrok_settings.jpg" width="540px" />
 
 3. Bot Framework Emulator を一度終了して、改めて起動します。
 
 4. [**create a new bot configuration**] を選択します。
 
-   <img src="./images/07/emu_create_new_configuration.jpg" width="540px" />
+   <img src="./images/rev0/07/emu_create_new_configuration.jpg" width="540px" />
 
 5．[**New bot configuration**] で以下の入力・選択をします。  
    最後に [**Save and connect**] をクリックします。
@@ -202,7 +202,7 @@ Bot アプリケーションを Azure に発行します。
    |Microsoft App password|発行した App Service のパスワード|
    |Encrypt keys stored ～|チェック|
 
-   <img src="./images/07/emu_new_bot_configuration.jpg" width="540px" />
+   <img src="./images/rev0/07/emu_new_bot_configuration.jpg" width="540px" />
 
 6. BBot Framework Emulator で何か入力してみます。
 
@@ -211,7 +211,7 @@ Bot アプリケーションを Azure に発行します。
 
    など、LUIS または QnA Maker で処理されることを確認します。
 
-   <img src="./images/07/emu_test.jpg" width="540px" />
+   <img src="./images/rev0/07/emu_test.jpg" width="540px" />
 
 ---
 

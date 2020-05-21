@@ -36,7 +36,7 @@ Bot Framework Composer を起動していない場合は、以下のコマンド
 3. Web ブラウザーを起動して "**http://localhost:3000**" に接続  
    Bot Framework Composer アプリケーションが表示されます。
 
-   <img src="./images/02/open_bfcomposer.jpg" width="480px" />
+   <img src="./images/rev0/02/open_bfcomposer.jpg" width="480px" />
 
 ---
 
@@ -46,16 +46,16 @@ Bot　Framework Composer で新規プロジェクトを作成します。
 
 1. Home 画面で [New] をクリックします。
 
-   <img src="./images/02/comp_new_project.jpg" width="540px" />
+   <img src="./images/rev0/02/comp_new_project.jpg" width="540px" />
 
 2. 今回は "Create from Scratch" を選択します。
 
-   <img src="./images/02/comp_create_from_scratch.jpg" width="540px" />
+   <img src="./images/rev0/02/comp_create_from_scratch.jpg" width="540px" />
 
 3. 任意の名前でプロジェクトを作成します。  
    以下の説明では "MyEchoBot" とします。
 
-   <img src="./images/02/comp_set_new_name.jpg" width="480px" />
+   <img src="./images/rev0/02/comp_set_new_name.jpg" width="480px" />
 
 ---
 
@@ -67,7 +67,7 @@ Bot　Framework Composer で新規プロジェクトを作成します。
 
 2. "**Create a trigger**" ダイアログで "**Unknown intent**" を選択します。
 
-   <img src="./images/02/comp_main_new_trigger.jpg" width="400px" />
+   <img src="./images/rev0/02/comp_main_new_trigger.jpg" width="400px" />
 
    > Trigger とは、ユーザーの入力に対して、処理を行い応答を返す契機になるものです。
    >
@@ -78,7 +78,7 @@ Bot　Framework Composer で新規プロジェクトを作成します。
 3. 画面中央の "**Authoring canvas**" に Unknown intent のダイアログが表示されたら、[**+**] をクリックします。  
    続いて [**Send a message**] を選択します。
 
-   <img src="./images/02/comp_add_send_mes_to_unknown_intent.jpg" width="540px" />
+   <img src="./images/rev0/02/comp_add_send_mes_to_unknown_intent.jpg" width="540px" />
 
    > ユーザーが何か入力したら「メッセージを返す」処理を追加しました。
 
@@ -91,7 +91,7 @@ Bot　Framework Composer で新規プロジェクトを作成します。
 
    > 先頭のハイフンおよび半角スペースは必須です。  
 
-   <img src="./images/02/comp_unknown_send_mes_prop.jpg" width="540px" />
+   <img src="./images/rev0/02/comp_unknown_send_mes_prop.jpg" width="540px" />
 
 ---
 
@@ -104,19 +104,19 @@ Bot Framework Emulator を起動して動作を確認します。
    Bot の準備中はボタンの左隣に [**Reloading**] と表示され、Bot が起動すると [**Test in emulator**] と表示されます。  
    初めての [Start Bot] の操作では起動までに少し時間がかかります。
 
-   <img src="./images/02/comp_start_bot1.jpg" width="400px" />
+   <img src="./images/rev0/02/comp_start_bot1.jpg" width="400px" />
    <br />
-   <img src="./images/02/comp_start_bot2.jpg" width="400px" />
+   <img src="./images/rev0/02/comp_start_bot2.jpg" width="400px" />
 
 2. [**Test in Emulator**] をクリックします。  
    ブラウザーのポップアップで [**Bot Framework Emulator を開く**] をクリックします。
 
-   <img src="./images/02/comp_run_emulator.jpg" width="540px" />
+   <img src="./images/rev0/02/comp_run_emulator.jpg" width="540px" />
 
 3. Bot Framewoek Emulator が起動したら、何か入力します。  
    入力した内容で Bot が応答することを確認します。
 
-   <img src="./images/02/bfemu_unknown_intent.jpg" width="540px" />
+   <img src="./images/rev0/02/bfemu_unknown_intent.jpg" width="540px" />
 
 Bot は期待通りに動作しました。
 

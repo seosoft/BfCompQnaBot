@@ -30,7 +30,7 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
 
 2. "**luis**" セクションの "**defaultLanguage**" を "**ja-jp**" に変更します。
 
-   <img src="./images/06/comp_settings_luis_language.jpg" width="540px" />
+   <img src="./images/rev0/06/comp_settings_luis_language.jpg" width="540px" />
 
 ---
 
@@ -49,7 +49,7 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
    - こんにちは、Azure Q&A Bot です
    ```
 
-   <img src="./images/06/comp_update_greeting_mes.jpg" width="540px" />
+   <img src="./images/rev0/06/comp_update_greeting_mes.jpg" width="540px" />
 
 3. "MyQnaBot.Main" の "**help**" を選択して [**Send a message**] アクションをクリックします。
 
@@ -63,7 +63,7 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
    ```
    ````
 
-   <img src="./images/06/comp_help_mes_multilines.jpg" width="540px" />
+   <img src="./images/rev0/06/comp_help_mes_multilines.jpg" width="540px" />
 
 ---
 
@@ -78,7 +78,7 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
 
 1. "**MyQnaBot.Main**" を選択して、Property の [**Recognizer Type**] を "**LUIS**" に変更します。
 
-   <img src="./images/06/comp_main_regtype_luis.jpg" width="540px" />
+   <img src="./images/rev0/06/comp_main_regtype_luis.jpg" width="540px" />
 
 ---
 
@@ -97,7 +97,7 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    - ボットの機能
    ```
 
-   <img src="./images/06/comp_help_responses.jpg" width="540px" />
+   <img src="./images/rev0/06/comp_help_responses.jpg" width="540px" />
 
    > "Expected responses" では、別の言い方を登録したり、英語・日本語を組み合わせると認識精度が上がることがあります。  
    > 例えば  
@@ -129,18 +129,18 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
 
 2. [**アカウント**] - [**Settings**] を選択します。
 
-   <img src="./images/06/luis_settings.jpg" width="540px" />
+   <img src="./images/rev0/06/luis_settings.jpg" width="540px" />
 
 3. [**Starter_Key**] セクションの [**Primary Key**] をクリップボードにコピーします。  
    この後すぐに使います。
 
-   <img src="./images/06/luis_primarykey.jpg" width="540px" />
+   <img src="./images/rev0/06/luis_primarykey.jpg" width="540px" />
 
 4. Bot Framework Composer に戻って、[**Start Bot**] または [**Restart Bot**] をクリックします。
 
 5. [**Publish LUIS models**] ダイアログが開いたら、**LUIS の Primary Key** を貼り付けて、[**OK**] をクリックします。
 
-   <img src="./images/06/comp_publish_luis.jpg" width="540px" />
+   <img src="./images/rev0/06/comp_publish_luis.jpg" width="540px" />
 
 6. [**Test in Emulator**] が表示されれば、LUIS への発行と Bot の再起動が完了しています。
 
@@ -155,7 +155,7 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
 
    など、LUIS または QnA Maker で処理されます。
 
-   <img src="./images/06/emu_test.jpg" width="540px" />
+   <img src="./images/rev0/06/emu_test.jpg" width="540px" />
 
 ---
 

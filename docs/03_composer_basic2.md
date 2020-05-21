@@ -45,11 +45,11 @@ Bot アプリケーションが挨拶メッセージを返すのは
 
 2. [**Branch: if/else**] アクションの中の "**True**" の下にある [**+**] をクリックします。
 
-   <img src="./images/03/comp_greeting_send_mes.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_greeting_send_mes.jpg" width="540px" />
 
 3. [Send a message] を選択します。
 
-   <img src="./images/03/comp_greeting_send_mes2.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_greeting_send_mes2.jpg" width="540px" />
 
 4. Property の [**Language Generation**] に以下を入力します。
 
@@ -58,7 +58,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
    - ようこそ、Echo Bot へ
    ```
 
-   <img src="./images/03/comp_greeting_mes_input.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_greeting_mes_input.jpg" width="540px" />
 
    > [Language Generation] に入力した内容を Bot が返します。  
    > 2行以上を指定すると、Bot はランダムにいずれかの項目を返します。
@@ -71,9 +71,9 @@ Bot アプリケーションが挨拶メッセージを返すのは
 
    [**Restart Conversation - New User ID**] を何度かクリックして、ランダムに挨拶メッセージが変わることを確認します。
 
-   <img src="./images/03/emu_greeting_result1.jpg" width="540px" />
+   <img src="./images/rev0/03/emu_greeting_result1.jpg" width="540px" />
    <br />
-   <img src="./images/03/emu_greeting_result2.jpg" width="540px" />
+   <img src="./images/rev0/03/emu_greeting_result2.jpg" width="540px" />
 
    > [Restart Conversation] は、ユーザーと Bot との対話を再起動することを意味します。  
    > 対話が新しく始まるので、そのたびに挨拶メッセージを見ることができます。
@@ -97,11 +97,11 @@ Bot にヘルプメッセージを応答する機能を追加します。
 2. [**Name**] にダイアログの名前を入力します。  
    今回は "help" とします。
 
-   <img src="./images/03/comp_add_help_dialog.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_add_help_dialog.jpg" width="540px" />
 
 3. [**+**] をクリックして、続いて [Send a message] をクリックします。
 
-   <img src="./images/03/help_begindialog_send_mes.jpg" width="540px" />
+   <img src="./images/rev0/03/help_begindialog_send_mes.jpg" width="540px" />
 
 4. [**Send a message**] をクリックして、Property の [**Language Generation**] に以下を入力します。
 
@@ -109,7 +109,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
    - ユーザーの入力をオウム返しします
    ```
 
-   <img src="./images/03/comp_help_send_mes_input.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_help_send_mes_input.jpg" width="540px" />
 
 ---
 
@@ -120,7 +120,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
 1. "**MyEchoBot.Main**" を選択して、Property の [**Recognizer Type**] で "**Regular Expression**" を選択します。
 
-   <img src="./images/03/comp_main_regtype.jpg" width="640px" />
+   <img src="./images/rev0/03/comp_main_regtype.jpg" width="640px" />
 
    > 今までは Intent（＝意図、ユーザーが Bot に何をさせようとしているのか）を分類するルールを持っていませんでした。  
    > この手順で、正規表現で Intent を分類することを指示しました。
@@ -137,17 +137,17 @@ Bot にヘルプメッセージを応答する機能を追加します。
    > 正規表現のパターンとして、**大文字・小文字は区別されません**。  
    > ユーザーの入力が "help", "Help", "HELP", "ヘルプ" などの時に、このトリガーにメッセージが分配されます。
 
-   <img src="./images/03/comp_help_trigger.jpg" width="640px" />
+   <img src="./images/rev0/03/comp_help_trigger.jpg" width="640px" />
 
 3. [**+**] をクリックして、続いて [**Dialog Management**] - [**Begin a new dialog**] をクリックします。
 
-   <img src="./images/03/comp_help_begin_help_dialog.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_help_begin_help_dialog.jpg" width="540px" />
 
 4. [**Begin a new dialog**] アクションの Property の [**Dialog name**] で "**help**" を選択します。
 
-   <img src="./images/03/comp_help_trigger_select_name1.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_help_trigger_select_name1.jpg" width="540px" />
    <br />
-   <img src="./images/03/comp_help_trigger_select_name2.jpg" width="540px" />
+   <img src="./images/rev0/03/comp_help_trigger_select_name2.jpg" width="540px" />
 
 ---
 
@@ -172,7 +172,7 @@ Bot Framework Emulator で動作を見てみます。
    |任意の入力|「(入力した内容)」と言いましたね|
 
    <br />
-   <img src="./images/03/emu_echobot_latest.jpg" width="540px" />
+   <img src="./images/rev0/03/emu_echobot_latest.jpg" width="540px" />
 
 ---
 

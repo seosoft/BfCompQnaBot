@@ -28,17 +28,17 @@
 
 3. "**MyEchoBot**" を "**MyQnaBot**" にリネームします。
 
-   <img src="./images/05/explorer_rename.jpg" width="480px" />
+   <img src="./images/rev0/05/explorer_rename.jpg" width="480px" />
 
 4. Web ブラウザーで Bot Framework Composer を開きます。
 
 5. [**Open**] をクリックして、続いて "**MyQnaBot**" を選択します。
 
-   <img src="./images/05/comp_open_project.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_open_project.jpg" width="540px" />
 
 6. "Main" Trigger の Property で、名前を "**MyQnaBot.Main**" に変更します。
 
-   <img src="./images/05/comp_rename_main.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_rename_main.jpg" width="540px" />
 
 ---
 
@@ -51,12 +51,12 @@ QnA Maker で作ったナレッジベースを呼び出すためのダイアロ�
 1. [**New Dialog**] で新しいダイアログを作成します。  
    名前は "**qna**" とします。
 
-   <img src="./images/05/comp_new_dialog_qna.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_new_dialog_qna.jpg" width="540px" />
 
 2. [**qna**] トリガーの [**BeginDialog**] をクリックします。  
    続いて [**+**] - [**Access External Resources**] - [**Connect to QnA knowledgebase**] を選択します。
 
-   <img src="./images/05/comp_qna_add_action_qna.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_qna_add_action_qna.jpg" width="540px" />
 
 3. "**Connect to QnA knowledgebase**" アクションを選択して、Property で以下の入力をします。
 
@@ -76,9 +76,9 @@ QnA Maker で作ったナレッジベースを呼び出すためのダイアロ�
    > また "Active learning card title", "Card no match text", "Card no match response" は [公式ドキュメント](https://docs.microsoft.com/en-us/composer/how-to-add-qna-to-bot) ではオプション値のはずですが、2020年4月末時点では空にすると Bot 実行時にエラーメッセージが出力されます。
    > 今回のハンズオンではこれらの値は使用しませんが、ひとまず何か値を入れておきます。
 
-   <img src="./images/05/comp_qna_action_settings1.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_qna_action_settings1.jpg" width="540px" />
    <br />
-   <img src="./images/05/comp_qna_action_settings2.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_qna_action_settings2.jpg" width="540px" />
 
    "Connect to QnA Knowledgebase" は、このアクションだけでユーザーへの応答まで行います。
 
@@ -94,15 +94,15 @@ QnA Maker で作ったナレッジベースを呼び出すためのダイアロ�
 
 2. [**Send a message**] アクションを削除します。
 
-   <img src="./images/05/comp_unknown_delete_send_action.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_unknown_delete_send_action.jpg" width="540px" />
 
 3. [**+**] - [**Dialog management**] - [**Begin a new dialog**] を選択します。
 
-   <img src="./images/05/comp_unknown_add_begin_dialog.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_unknown_add_begin_dialog.jpg" width="540px" />
 
 4. [**Begin a new dialog**] アクションを選択して、Property の [**Dialog name**] で "qna" を選択します。
 
-   <img src="./images/05/comp/../comp_unknown_property_qna.jpg" width="540px" />
+   <img src="./images/rev0/05/comp/../comp_unknown_property_qna.jpg" width="540px" />
 
 ---
 
@@ -116,7 +116,7 @@ QnA Maker への接続情報は **Settings ファイル** に記述します。
 
 3. "**qna**" セクションに [**QnA Maker を 発行した時の設定値**](04_create_qnamaker_knowledgebase.md) を設定します。
 
-   <img src="./images/05/comp_settings_qn.jpg" width="540px" />
+   <img src="./images/rev0/05/comp_settings_qn.jpg" width="540px" />
 
 > Settings ファイルから分かる通り、Bot Framework Compmoser では "Connect to QnA Knowledgebase" を利用した QnA Maker 利用は一つのナレッジベースのみ接続可能です。  
 > 複数のナレッジベースを呼び出したい場合は "Send an HTTP Request" アクションを使うなどの工夫が必要です。
@@ -136,7 +136,7 @@ Bot Framework Emulator を使って動作確認します。
 3. Bot Framework Emulator で動作確認します。  
    例えば "**サポートされる言語は何**" と入力して、ナレッジベースから適切な Answer が返ってくることを確認します。
 
-   <img src="./images/05/emu_qna_test.jpg" width="540px" />
+   <img src="./images/rev0/05/emu_qna_test.jpg" width="540px" />
 
    > "**ヘルプ**" と入力すると「ユーザーの入力をオウム返しします」と応答することを確認します。  
    > 今の Q&A Bot の機能からは異なっていますが、すでに作成済みの "help" ダイアログが応答していることが分かります。
