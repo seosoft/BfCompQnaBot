@@ -10,6 +10,8 @@
 6. [LUIS でユーザーの意図を予測する](./docs/06_composer_luis.md)  
 7. [QnA Bot アプリケーションをクラウドに配置](./docs/07_deploy_to_azure.md)
 
+> このハンズオンでは、2020年5月に GA した [**Bot Framework Composer 1.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
+
 ---
 
 <br />
@@ -24,6 +26,3 @@ Bot Framework Composer は、Bot アプリケーションを GUI で開発でき
 - 外部サービスの利用で機能拡張が可能
 
 Bot Framework Composer の公式ドキュメントは [**こちら**](https://docs.microsoft.com/ja-jp/composer/) です。
-
-> Bot Framework Composer は現在 Preview であり、仕様や操作方法、インストール方法、配布元などが今後変更される可能性があります。  
-> 本コンテンツは 2020年4月末時点の情報を掲載しています。
