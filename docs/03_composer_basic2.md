@@ -222,6 +222,11 @@ Bot Framework Emulator で動作を見てみます。
 
    ![](./images/03/bfemu_test_help.jpg)
 
+   > Intent の分類が比較的簡単なルールの場合には、[**Recognizer Type**] を "**Regular Expression**" にすることができます。  
+   >
+   > ユーザーに自由な入力を認める場合は **LUIS (Language Understanding)** で分類する必要があります。（例えば「ヘルプ」以外に「このBotの使い方」や「ボットの機能」など）  
+   > LUIS についてはあとのステップで取り上げます。 
+
 ---
 
 以上で、Bot アプリケーションの重要な機能拡張の手順を理解できたと思います。  
