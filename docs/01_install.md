@@ -19,16 +19,18 @@ Windows 版、macOS 版、Linux 版が用意されています。
 1. **Bot Framework Emulator インストール**  
    [**Bot Framework Emulator**](https://github.com/microsoft/BotFramework-Emulator/releases) 最新版をダウンロードしてインストールします。  
 
-   ![](./images/01/bfemu_install_01.jpg)
-   ![](./images/01/bfemu_install_02.jpg)
+   <img src="./images/01/bfemu_install_01.jpg" width="400px" />
+   <br />
+   <img src="./images/01/bfemu_install_02.jpg" width="400px" />
 
    Bot Framework Emulator は Bot 開発の **テスト用クライアント** として使用します。
 
 2. **.NET Core 3.1 SDK インストール**  
    [**.NET Core 3.1 SDK**](https://dotnet.microsoft.com/download/dotnet-core/3.1) をダウンロードしてインストールします。
 
-   ![](./images/01/dncore_install_01.jpg)
-   ![](./images/01/dncore_install_02.jpg)
+   <img src="./images/01/dncore_install_01.jpg" width="400px" />
+   <br />
+   <img src="./images/01/dncore_install_02.jpg" width="400px" />
 
 3. **Bot Framework Composer インストール**  
    使用している OS にあわせて、**Bot Framework Composer** のインストーラーをダウンロードしてインストールします。
@@ -39,8 +41,9 @@ Windows 版、macOS 版、Linux 版が用意されています。
    |macOS|[https://aka.ms/bf-composer-download-mac](https://aka.ms/bf-composer-download-mac)|
    |Linux|[https://aka.ms/bf-composer-download-linux](https://aka.ms/bf-composer-download-linux)|
 
-   ![](./images/01/bfcomp_install_01.jpg)
-   ![](./images/01/bfcomp_install_02.jpg)
+   <img src="./images/01/bfcomp_install_01.jpg" width="480px" />
+   <br />
+   <img src="./images/01/bfcomp_install_02.jpg" width="480px" />
 
 4. **Bot Framework Composer 起動確認**  
    確認のために Bot Framework Composer を起動します。
