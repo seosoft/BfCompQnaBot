@@ -138,20 +138,28 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
    > **```** (バッククォート 3個) で囲むことで、複数行メッセージを定義できます。
 
-2. [**Dialog Flow**] - [**+ Add**] - [**Add new dialog**] を選択します。  
+2. ここで "**WelcomeUser**" の定義も変更しておきます。
+
+   ```txt
+   # WelcomeUser
+   - こんにちは、Azure Q&A Bot です
+   - ようこそ、Azure Q&A Bot へ
+   ```
+
+3. [**Dialog Flow**] - [**+ Add**] - [**Add new dialog**] を選択します。  
 
    <img src="./images/03/bfcomp_add_new_dialog.jpg" width="540px" />
 
-3. [**Name**] にダイアログの名前を入力します。  
+4. [**Name**] にダイアログの名前を入力します。  
    今回は "**Help**" とします。
 
    <img src="./images/03/bfcomp_help_dialog_name.jpg" width="540px" />
 
-4. [**+**] をクリックして、続いて [**Send a message**] をクリックします。
+5. [**+**] をクリックして、続いて [**Send a message**] をクリックします。
 
    ![](./images/03/bfcomp_help_add_send_res.jpg)
 
-5. [**Send a response**] をクリックして、Property の [**Language Generation**] に以下を入力します。
+6. [**Send a response**] をクリックして、Property の [**Language Generation**] に以下を入力します。
 
    ```txt
    - ${ShowHelp()}
@@ -213,11 +221,11 @@ Bot Framework Emulator で動作を見てみます。
    |入力|応答|
    |---|---|
    |（※対話開始時）|"こんにちは、Echo Bot です" または "ようこそ、Echo Bot へ"|
-   |help|ユーザーの入力をオウム返しします|
-   |Help|ユーザーの入力をオウム返しします|
-   |HELP|ユーザーの入力をオウム返しします|
-   |ヘルプ|ユーザーの入力をオウム返しします|
-   |使い方|ユーザーの入力をオウム返しします|
+   |help|Azure についての質問に答えます|
+   |Help|Azure についての質問に答えます|
+   |HELP|Azure についての質問に答えます|
+   |ヘルプ|Azure についての質問に答えます|
+   |使い方|Azure についての質問に答えます|
    |任意の入力|「(入力した内容)」と言いましたね|
 
    ![](./images/03/bfemu_test_help.jpg)
