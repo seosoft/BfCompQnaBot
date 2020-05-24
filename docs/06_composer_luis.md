@@ -134,19 +134,22 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
 
 1. Bot Framework Emulator で何か入力してみます。
 
-   - このボットの使い方
+   - ヘルプ
    - サポートされる言語は何
 
    など、LUIS または QnA Maker で処理されます。
 
-   <img src="./images/rev0/06/emu_test.jpg" width="540px" />
+   ![](./images/06/bfemu_test_qna_and_luis.jpg)
 
 ---
 
-以上で LUIS と QnA Maker とを組み合わせて利用できるようになりました。  
-Q&A Bot アプリケーションの開発はここで終わりです。
+以上で LUIS と QnA Maker とを組み合わせて利用できるようになりました。
 
-次のステップでは開発した Bot アプリケーションを Azure に配置します。
+以上で Bot Framework Composer を使った Q&A Bot アプリケーションを開発する全ての手順は終わりです。
 
-[前に戻る](05_composer_qna.md) | [次に進む](07_deploy_to_azure.md)  
+おつかれさまでした。
+
+> 作成した Bot アプリケーションのAzure への発行については準備中です。
+
+[前に戻る](05_composer_qna.md)  
 [目次に戻る](../README.md)
