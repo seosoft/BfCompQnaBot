@@ -220,7 +220,7 @@ Bot Framework Emulator で動作を見てみます。
 
    |入力|応答|
    |---|---|
-   |（※対話開始時）|"こんにちは、Echo Bot です" または "ようこそ、Echo Bot へ"|
+   |（※対話開始時）|"こんにちは、Azure Q&A Bot です" または "ようこそ、Azure Q&A Bot へ"|
    |help|Azure についての質問に答えます|
    |Help|Azure についての質問に答えます|
    |HELP|Azure についての質問に答えます|
