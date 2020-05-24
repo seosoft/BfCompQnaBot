@@ -2,7 +2,7 @@
 
 [前のステップ](03_composer_basic2.md) までで Bot Framework Composer の基本的な操作を理解しました。
 
-以下の手順では一旦 Bot Framework Composer を離れて、[**QnA Maker**](https://www.qnamaker.ai/) で Bot で使うナレッジベースを作成します。
+この手順では一旦 Bot Framework Composer を離れて、[**QnA Maker**](https://www.qnamaker.ai/) で Bot で使うナレッジベースを作成します。
 
 [1. QnA Maker リソースの作成](#qna-maker-%e3%81%a7%e3%83%8a%e3%83%ac%e3%83%83%e3%82%b8%e3%83%99%e3%83%bc%e3%82%b9%e4%bd%9c%e6%88%90)  
 [2. ナレッジベースの作成](#%e3%83%8a%e3%83%ac%e3%83%83%e3%82%b8%e3%83%99%e3%83%bc%e3%82%b9%e3%81%ae%e4%bd%9c%e6%88%90)  
@@ -90,10 +90,10 @@ Azure で作成した QnA Maker のリソースに、QnA Maker で接続して�
 
    <img src="./images/04/qna_kb_created.jpg" width="540px" />
 
-> 一般にはここで、正しく質問と回答とが取り込めているかを確認します。  
-> 今回は正しく取り込めることが分かっているサイトなので特に何もしません。  
->
-> 必要に応じて、内容を確認したり、質問・回答の文言を修正したりします。
+一般にはここで、正しく質問と回答とが取り込めているかを確認します。  
+今回は正しく取り込めることが分かっているサイトなので特に何もしません。
+
+必要に応じて、内容を確認したり、質問・回答の文言を修正したりします。
 
 ---
 
@@ -138,7 +138,7 @@ QnA Maker 内に Q&A を取り込んでナレッジベースを作成できた�
    |---|---|
    |Knowledge Id|1行目の "/knowledgebases/" と "/generateAnswer" の間の値
    |Host|2行目の "https://～/qnamaker"|
-   |Endpoint Key|3行目全部|
+   |Endpoint Key|"EndpointKey " のあとの文字列|
 
    <img src="./images/04/qna_published_settings.jpg" width="540px" />
 

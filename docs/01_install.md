@@ -1,171 +1,162 @@
 # 開発環境の構築
 
-ハンズオンの最初に [**Bot Framework Composer**](https://docs.microsoft.com/ja-jp/composer/) で Bot 開発する環境を構築します。
+ハンズオンの最初に [**Bot Framework Composer**](https://docs.microsoft.com/ja-jp/composer/) で Bot 開発のための環境を構築します。
 
-ここでは [**Yarn でソースコードからインストールする**](#yarn-%e3%81%a7%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%81%8b%e3%82%89%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab) 方法をお勧めします。
+このハンズオンでは、2020年5月に GA した [**Bot Framework Composer 1.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用します。  
+実施の時期によっては画面の構成などが一部異なる可能性があります。
 
-[ローカルアプリケーション版のインストール方法](#%e5%8f%82%e8%80%83-%e3%83%ad%e3%83%bc%e3%82%ab%e3%83%ab%e3%82%a2%e3%83%97%e3%83%aa%e3%82%b1%e3%83%bc%e3%82%b7%e3%83%a7%e3%83%b3%e7%89%88%e3%82%92%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab) も記載しますが、時期により最新のコードや画面・仕様に追従できていないことがあるため、参考情報と考えてください。
-
-> 2020年4月末時点では、Bot Framework Composer は Preview であり、互換性のない変更が行われる可能性があります。  
-> Bot Framework Composer 自体の開発は GitHub 上で進められていますが、ローカルアプリケーション版は最新のソースコードに追従していません。
->
-> このため、このハンズオン資料に掲載する操作や画面とは一部異なります。
+> 参考として [ソースコードからビルドする方法](#%e5%8f%82%e8%80%83-%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%81%8b%e3%82%89%e3%83%93%e3%83%ab%e3%83%89%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95) も紹介します。  
+> 不具合修正や機能追加・変更が、アプリケーション版より早いタイミングで行われる可能性があります。  
+興味がある方はソースコードからビルドする方法を検討してください。
 
 ---
 
-## Yarn でソースコードからインストール
+## デスクトップアプリケーション版をインストール
+
+Bot Framework Composer を使用するには、構築が簡単なデスクトップアプリケーション版をお勧めします。  
+Windows 版、macOS 版、Linux 版が用意されています。
+
+1. **Bot Framework Emulator インストール**  
+   [**Bot Framework Emulator**](https://github.com/microsoft/BotFramework-Emulator/releases) 最新版をダウンロードしてインストールします。  
+
+   <img src="./images/01/bfemu_install_01.jpg" width="400px" />
+   <br />
+   <img src="./images/01/bfemu_install_02.jpg" width="400px" />
+
+   Bot Framework Emulator は Bot 開発の **テスト用クライアント** として使用します。
+
+2. **.NET Core 3.1 SDK インストール**  
+   [**.NET Core 3.1 SDK**](https://dotnet.microsoft.com/download/dotnet-core/3.1) をダウンロードしてインストールします。
+
+   <img src="./images/01/dncore_install_01.jpg" width="400px" />
+   <br />
+   <img src="./images/01/dncore_install_02.jpg" width="400px" />
+
+3. **Bot Framework Composer インストール**  
+   使用している OS にあわせて、**Bot Framework Composer** のインストーラーをダウンロードしてインストールします。
+
+   |OS|インストーラーのアドレス|
+   |---|---|
+   |Windows|[https://aka.ms/bf-composer-download-win](https://aka.ms/bf-composer-download-win)|
+   |macOS|[https://aka.ms/bf-composer-download-mac](https://aka.ms/bf-composer-download-mac)|
+   |Linux|[https://aka.ms/bf-composer-download-linux](https://aka.ms/bf-composer-download-linux)|
+
+   <img src="./images/01/bfcomp_install_01.jpg" width="480px" />
+   <br />
+   <img src="./images/01/bfcomp_install_02.jpg" width="480px" />
+
+4. **Bot Framework Composer 起動確認**  
+   確認のために Bot Framework Composer を起動します。
+
+   ![](./images/01/bfcomp_start.jpg)
+
+5. **ngrok インストール**  
+   [**ngrok**](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
+   インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
+
+   ngrok は [ステップ 6](06_composer_luis.md) までの Bot アプリケーション開発の範囲では不要です。  
+   [ステップ 7](07_deploy_to_azure.md) で Bot アプリケーションを Azure に発行したあとの動作確認に使用します。
+
+   > Bot Framework Composer で開発する場合、以下のケースで ngrok が必要になります。
+   >
+   > - Azure に発行した Bot アプリケーションを Bot Framework Emulator でテストしたい場合
+   > - OAuth で認証したい場合
+   > - ローカルで実行している Bot アプリケーションに他のマシンから接続したい場合
+
+6. **(オプション) Visual Studio Code インストール**  
+   [**Visual Studio Code**](https://code.visualstudio.com/) をダウンロードしてインストールします。
+
+   このハンズオンの範囲では VSCode のインストールは必須ではありませんが、Bot Framework 開発を継続すると必要になることがあります。  
+   このタイミングでインストールすることをお勧めします。
+
+以上で、Bot アプリケーション開発環境の構築は完了です。  
+
+デスクトップアプリケーション版をインストールした場合は、以下の手順の "ソースからビルド" は不要です。
+
+---
+
+## (参考) ソースコードからビルドする方法
+
+GA したことで、Bot Framework Composer はデスクトップアプリケーション版のインストーラーが整備されました。  
+このハンズオンの実施、および一般的な利用にはデスクトップアプリケーション版の利用をお勧めします。
+
+最新の機能を利用したい、デスクトップアプリケーション版の不具合が問題になるような場合には、ソースコードからのビルドを検討してください。
+
 
 ここでは、[**Yarn**](https://classic.yarnpkg.com/ja/) で Bot Framework Composer のソースコードからインストールします。
 
-1. (オプション) Visual Studio Code インストール  
-   [Visual Studio Code](https://code.visualstudio.com/) をダウンロードしてインストールします。  
-   このハンズオンの範囲では VSCode のインストールは必須ではありませんが、Bot Framework 開発を勧めると必要になることがあります。  
-   このタイミングでインストールすることをお勧めします。
+1. **Git インストール**  
+   [**Git**](https://git-scm.com/downloads) をダウンロードしてインストールします。
 
-   なお git のデフォルトエディターとして Visaul Studio Code を選択できます。特に好みのエディターがない場合は、ここで Visual Studio Code をインストールしてください。
-
-2. git インストール  
-   [git](https://git-scm.com/downloads) をダウンロードしてインストールします。
-
-3. Node.js インストール  
-   [Node.js](https://nodejs.org/ja/download/) をダウンロードしてインストールします。  
+2. **Node.js インストール**  
+   [**Node.js**](https://nodejs.org/ja/download/) をダウンロードしてインストールします。  
    Version 12.13.0 以上が必要です。
 
-4. Yarn インストール  
-   [Yarn](https://classic.yarnpkg.com/en/docs/install#windows-stable) をダウンロードしてインストールします。  
+3. **Yarn インストール**  
+   [**Yarn**](https://classic.yarnpkg.com/en/docs/install#windows-stable) をダウンロードしてインストールします。  
    最新の安定版を選択してください。
   
-   インストール時に警告画面が表示されることがあります。  
-   [詳細情報] - [実行] でインストールを実行します。
+   > インストール時に警告画面が表示されることがあります。  
+   > [詳細情報] - [実行] でインストールを実行します。
 
-   <img src="./images/01/yarn_install_warning1.jpg" width="400px" />
-   <img src="./images/01/yarn_install_warning2.jpg" width="400px" />
+4. Bot Framework Composer ソースコード入手およびビルド  
 
-5. .NET Core 3.1 インストール  
-   [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) をダウンロードしてインストールします。
-
-6. Bot Framework Emulator インストール  
-   [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/releases) 最新版をダウンロードしてインストールします。  
-   Bot Framework Emulator は Bot 開発時にテスト用クライアントとして使用します。
-
-7. Bot Framework Composer ソースコード入手およびビルド  
-
-   7-1. コマンドプロンプト、PowerShell または Git Bash を開きます。(Windows の場合)  
+   4-1. コマンドプロンプト、PowerShell または Git Bash を開きます。(Windows の場合)  
    その他の OS ではターミナルクライアントを開きます。  
 
-   7-2. Bot Framework Composer をインストールするために任意のフォルダーに移動します。  
+   4-2. Bot Framework Composer をインストールする任意のフォルダーを作成して、そこに移動します。  
 
-   7-3. GitHub のリポジトリからソースコードをクローンまたはダウンロードします。  
+   4-3. GitHub のリポジトリからソースコードをクローンまたはダウンロードします。  
 
    ```cmd
    git clone https://github.com/microsoft/BotFramework-Composer.git
    ```
 
-   7-4. Composer フォルダーに移動します。  
+   4-4. Composer フォルダーに移動します。  
 
    ```cmd
    cd BotFramework-Composer\Compose
    ```
 
-   7-5. ビルドに必要なパッケージを取得します。  
+   5-5. ビルドに必要なパッケージを取得します。  
    数分程度の時間がかかるので完了するまで待ちます。
 
    ```cmd
    yarn
    ```
 
-   7-6. Bot Framework Composer アプリケーションをビルドします。  
+   5-6. Bot Framework Composer アプリケーションをビルドします。  
    数分程度の時間がかかるので完了するまで待ちます。
 
    ```cmd
    yarn build
    ```
 
-   <img src="./images/01/yarn_build.jpg" width="480px" />
-
-   7-7. Bot Framework Composer サーバー起動します。
+   5-7. Bot Framework Composer サーバーを起動します。
 
    ```cmd
    yarn startall
    ```
 
-   > 一度 Bot Framework Composer のインストールに成功した環境では、ビルドまでの手順は不要です。  
-   > 以後は "yarn startall" で Bot Framework Composer を起動できます。
+   Bot Framework Composer のビルドは PC ごとに一度だけ実行する必要があります。  
+   二度目以降は "yarn startall" で Bot Framework Composer を起動できます。
 
-   7-8. Bot Framework Composer を開きます。  
+   5-8. Bot Framework Composer を開きます。  
    Web ブラウザーを起動して "**http://localhost:3000**" に接続します。  
    Bot Framework Composer アプリケーションが表示されます。
 
-   <img src="./images/01/bfcomp_yarn_firstrun.jpg" width="480px" />
-
-8. ngrok インストール  
-   [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
+5. **ngrok インストール**  
+   [**ngrok**](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
    インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
 
-   > ngrok は、このハンズオンでは [ステップ 6](06_composer_luis.md) までの Bot アプリケーション開発の範囲では不要です。  
-   > [ステップ 7](07_deploy_to_azure.md) で使用します。
-   >
-   > Bot Framework Composer で開発する場合、以下のケースで ngrok が必要になります。
-   >
-   > - Azure に発行した Bot アプリケーションを Bot Framework Emulator でテストしたい場合
-   > - OAuth で認証したい場合
-   > - ローカルで実行している Bot アプリケーションに外部のクライアントから接続したい場合
+   ngrok は [ステップ 6](06_composer_luis.md) までの Bot アプリケーション開発の範囲では不要です。  
+   [ステップ 7](07_deploy_to_azure.md) で Bot アプリケーションを Azure に発行したあとの動作確認に使用します。
 
-以上で、Bot Framework Composer で Bot 開発する準備できました。
+6. **(オプション) Visual Studio Code インストール**  
+   [**Visual Studio Code**](https://code.visualstudio.com/) をダウンロードしてインストールします。
 
-[ページ先頭に戻る](#開発環境の構築)
-
----
-
-## (参考) ローカルアプリケーション版をインストール
-
-> 参考としてローカルアプリケーション版のインストールについて記載しますが、できるだけ [**ソースコードからインストール**](#yarn-%e3%81%a7%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%81%8b%e3%82%89%e3%82%a4%e3%83%b3%e3%82%b9%e3%83%88%e3%83%bc%e3%83%ab) することをお勧めします。
-
-ここでは、Bot Framework Composer のローカルアプリケーション版を使用するための環境構築を行います。  
-ローカルアプリケーションは Windows 版のみ用意されています。
-
-1. .NET Core 3.1 インストール  
-   [.NET Core 3.1 SDK](https://dotnet.microsoft.com/download/dotnet-core/3.1) をダウンロードしてインストールします。
-
-2. Bot Framework Emulator インストール  
-   [Bot Framework Emulator](https://github.com/microsoft/BotFramework-Emulator/releases) 最新版をダウンロードしてインストールします。  
-   Bot Framework Emulator は Bot 開発時にテスト用クライアントとして使用します。
-
-3. Bot Framework Composer インストール  
-   [Bot Framework Composer](https://gist.github.com/christopheranderson/e652ce1983547fbcde1457a5dcedfccd) をダウンロードしてインストールします。  
-  
-   インストール時に警告画面が表示されることがあります。  
-   [詳細情報] - [実行] でインストールを実行します。
-
-   <img src="./images/01/bfcomp_install_warning1.jpg" width="400px" />
-   <img src="./images/01/bfcomp_install_warning2.jpg" width="400px" />
-
-4. Bot Framework Composer 起動確認  
-   確認のために Bot Framework Composer を起動します。
-
-   <img src="./images/01/bfcomp_firstrun.jpg" width="480px" />
-
-5. ngrok インストール  
-   [ngrok](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
-   インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
-
-   > ngrok は、このハンズオンでは [ステップ 6](06_composer_luis.md) までの Bot アプリケーション開発の範囲では不要です。  
-   > [ステップ 7](07_deploy_to_azure.md) で使用します。
-   >
-   > Bot Framework Composer で開発する場合、以下のケースで ngrok が必要になります。
-   >
-   > - Azure に発行した Bot アプリケーションを Bot Framework Emulator でテストしたい場合
-   > - OAuth で認証したい場合
-   > - ローカルで実行している Bot アプリケーションに外部のクライアントから接続したい場合
-
-6. (オプション) Visual Studio Code インストール  
-   [Visual Studio Code](https://code.visualstudio.com/) をダウンロードしてインストールします。  
-   このハンズオンの範囲では VSCode のインストールは必須ではありませんが、Bot Framework 開発を勧めると必要になることがあります。  
+   このハンズオンの範囲では VSCode のインストールは必須ではありませんが、Bot Framework 開発を継続すると必要になることがあります。  
    このタイミングでインストールすることをお勧めします。
-
-以上で、ローカルアプリケーション版 Bot Framework Composer のインストールは完了です。
-
-[ページ先頭に戻る](#開発環境の構築)
 
 ---
 
