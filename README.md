@@ -8,14 +8,14 @@
 4. [QnA Maker でナレッジベース作成](./docs/04_create_qnamaker_knowledgebase.md)  
 5. [Bot アプリケーションに Q&A 機能を実装](./docs/05_composer_qna.md)  
 6. [LUIS でユーザーの意図を予測する](./docs/06_composer_luis.md)  
-7. [QnA Bot アプリケーションをクラウドに配置](./docs/07_deploy_to_azure.md)
 
-> このハンズオンでは、2020年5月に GA した [**Bot Framework Composer 1.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
+> このハンズオンでは、2020年5月に GA した [**Bot Framework Composer 1.0.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
+
+> 作成した Bot アプリケーションのAzure への発行については準備中です。
 
 ---
 
-<br />
-<img src="./docs/images/rev0/bfcomp.jpg" width="540px" />
+![](./docs/images/bfcomp_main.jpg)
 
 Bot Framework Composer は、Bot アプリケーションを GUI で開発できるツールです。
 
