@@ -35,6 +35,8 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
 
 2. [**luis**] セクションの [**defaultLanguage**] を "**ja-jp**" に変更します。  
 
+   > あとで動作確認した際に Help Intent に該当する入力を正しく処理できない場合は、"**en-us**" に戻してみてください。  
+
    <img src="./images/06/bfcomp_settings_luis.jpg" width="540px" />
 
 3. ここで一緒に [**luis**] -[**name**] を "**MyQnaBot**" に変更しておきます。（必須ではありません）
