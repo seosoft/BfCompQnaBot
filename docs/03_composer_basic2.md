@@ -41,7 +41,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
 
 1. "**MyQnaBot**" の [**Greeting**] Trigger を選択します。
 
-   ![](./images/03/bfcomp_select_greeting_trigger.jpg)
+   ![](./images/prev/03/bfcomp_select_greeting_trigger.jpg)
 
 2. "**Send a response**" アクションを選択します。
 
@@ -52,7 +52,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
    - ${WelcomeUser()}
    ```
 
-   ![](./images/03/bfcomp_greting_send_mes.jpg)
+   ![](./images/prev/03/bfcomp_greting_send_mes.jpg)
 
 4. "**WelcomeUser()**" の部分でマウスホバーします。  
    以下の内容がポップアップ表示されます。
@@ -64,12 +64,12 @@ Bot アプリケーションが挨拶メッセージを返すのは
    これが挨拶メッセージとして返されるものです。  
    前のステップで Bot Framework Emulator で確認したものと同じです。
 
-   ![](./images/03/bfcomp_greting_send_mes_lg.jpg)
+   ![](./images/prev/03/bfcomp_greting_send_mes_lg.jpg)
 
 5. 挨拶メッセージが定義されている場所を確認します。  
    [**Bot Response**] - [**All**] に "#WelcomeUser" テンプレートが定義されていることを確認します。
 
-   ![](./images/03/bfcomp_botresp_welcomeuser.jpg)
+   ![](./images/prev/03/bfcomp_botresp_welcomeuser.jpg)
 
 ---
 
@@ -86,20 +86,20 @@ Bot アプリケーションが挨拶メッセージを返すのは
    - ようこそ、Echo Bot へ
    ```
 
-   ![](./images/03/bfcomp_botresp_edit_welcomeuser.jpg)
+   ![](./images/prev/03/bfcomp_botresp_edit_welcomeuser.jpg)
 
    メッセージの内容を2行にしたことにより、ランダムでどちらかのメッセージを返すようになります。
 
 3. 挨拶メッセージが変更されることを Emulator で確認します。  
    [Start Bot] または [Restart Bot] をクリックして、Bot を起動します。  
 
-   <img src="./images/03/bfcomp_restart_bot.jpg" width="400px" />
+   <img src="./images/prev/03/bfcomp_restart_bot.jpg" width="400px" />
 
 4. Bot が起動したら Bot Framework Emulator を開きます。
 
    [**Restart Conversation - New User ID**] を何度かクリックして、ランダムに挨拶メッセージが変わることを確認します。
 
-   ![](./images/03/bfemu_restart_conv.jpg)
+   ![](./images/prev/03/bfemu_restart_conv.jpg)
 
    [Restart Conversation] は、ユーザーと Bot との対話を再起動することを意味します。  
    対話が新しく始まるので、そのたびに挨拶メッセージを見ることができます。
@@ -135,7 +135,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
    ```
    ````
 
-   ![](./images/03/bfcomp_botresp_help.jpg)
+   ![](./images/prev/03/bfcomp_botresp_help.jpg)
 
    > **```** (バッククォート 3個) で囲むことで、複数行メッセージを定義できます。
 
@@ -149,16 +149,16 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
 3. [**Dialog Flow**] - [**+ Add**] - [**Add new dialog**] を選択します。  
 
-   <img src="./images/03/bfcomp_add_new_dialog.jpg" width="540px" />
+   <img src="./images/prev/03/bfcomp_add_new_dialog.jpg" width="540px" />
 
 4. [**Name**] にダイアログの名前を入力します。  
    今回は "**Help**" とします。
 
-   <img src="./images/03/bfcomp_help_dialog_name.jpg" width="540px" />
+   <img src="./images/prev/03/bfcomp_help_dialog_name.jpg" width="540px" />
 
 5. [**+**] をクリックして、続いて [**Send a message**] をクリックします。
 
-   ![](./images/03/bfcomp_help_add_send_res.jpg)
+   ![](./images/prev/03/bfcomp_help_add_send_res.jpg)
 
 6. [**Send a response**] をクリックして、Property の [**Language Generation**] に以下を入力します。
 
@@ -166,7 +166,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
    - ${ShowHelp()}
    ```
 
-   ![](./images/03/bfcomp_help_send_mes_lg.jpg)
+   ![](./images/prev/03/bfcomp_help_send_mes_lg.jpg)
 
 ---
 
@@ -177,7 +177,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
 1. "**MyQnaBot**" を選択して、Property の [**Recognizer Type**] で "**Regular Expression**" を選択します。
 
-   ![](./images/03/bfcomp_set_rectype.jpg)
+   ![](./images/prev/03/bfcomp_set_rectype.jpg)
 
    > 今までは Intent（＝意図、ユーザーが Bot に何をさせようとしているのか）を分類するルールを持っていませんでした。  
    > この手順で正規表現でユーザー入力の Intent を分類するようになりました。
@@ -185,7 +185,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
 2. ヘルプダイアログを呼び出すための Trigger を "**MyQnaBot**" に追加します。  
    [**+ Add**] - [**Add new trigger on MyQnaBot**] を選択します。
 
-   <img src="./images/03/bfcomp_add_help_trigger.jpg" width="480px" />
+   <img src="./images/prev/03/bfcomp_add_help_trigger.jpg" width="480px" />
 
 3. "MyEchoBot.Main" で [**New Trigger**] を選択します。  
    [**Create a trigger**] ダイアログが開いたら、以下を入力・選択をします。
@@ -196,15 +196,15 @@ Bot にヘルプメッセージを応答する機能を追加します。
    |トリガー名|ここでは "**Help**"|
    |正規表現のパターン|(?i)(?:help\|ヘルプ\|使い方)|
 
-   <img src="./images/03/bfcomp_create_help_trigger.jpg" width="540px" />
+   <img src="./images/prev/03/bfcomp_create_help_trigger.jpg" width="540px" />
 
 4. [**+**] をクリックして、続いて [**Dialog Management**] - [**Begin a new dialog**] をクリックします。
 
-   ![](./images/03/bfcomp_add_help_begin_dialog.jpg)
+   ![](./images/prev/03/bfcomp_add_help_begin_dialog.jpg)
 
 5. [**Begin a new dialog**] アクションの Property の [**Dialog name**] で "**Help**" を選択します。
 
-   ![](./images/03/bfcomp_set_help_dialog_name.jpg)
+   ![](./images/prev/03/bfcomp_set_help_dialog_name.jpg)
 
 ---
 
@@ -229,7 +229,7 @@ Bot Framework Emulator で動作を見てみます。
    |使い方|Azure についての質問に答えます|
    |任意の入力|「(入力した内容)」と言いましたね|
 
-   ![](./images/03/bfemu_test_help.jpg)
+   ![](./images/prev/03/bfemu_test_help.jpg)
 
    > Intent の分類が比較的簡単なルールの場合には、[**Recognizer Type**] を "**Regular Expression**" にすることができます。  
    >

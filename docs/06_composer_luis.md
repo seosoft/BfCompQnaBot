@@ -37,7 +37,7 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
 
    > あとで動作確認した際に Help Intent に該当する入力を正しく処理できない場合は、"**en-us**" に戻してみてください。  
 
-   <img src="./images/06/bfcomp_settings_luis.jpg" width="540px" />
+   <img src="./images/prev/06/bfcomp_settings_luis.jpg" width="540px" />
 
 3. ここで一緒に [**luis**] -[**name**] を "**MyQnaBot**" に変更しておきます。（必須ではありません）
 
@@ -51,7 +51,7 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
 
 1. [**Design Flow**] - [**MyQnaBot**] を選択して、Property の [**Recognizer Type**] を "**LUIS**" に変更します。
 
-   ![](./images/06/bfcomp_set_rectype.jpg)
+   ![](./images/prev/06/bfcomp_set_rectype.jpg)
 
 > LUIS は、このハンズオンで利用するよりもさらに高度な言語処理が可能です。  
 > このハンズオンでは LUIS 利用方法を理解するために手順に組み込みました。
@@ -73,7 +73,7 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    - ボットの機能
    ```
 
-   ![](./images/06/bfcomp_help_trigger_phrases.jpg)
+   ![](./images/prev/06/bfcomp_help_trigger_phrases.jpg)
 
    "Trigger Phrases" では、類義語を登録したり、英語・日本語を組み合わせると認識精度が上がることがあります。  
    例えば  
@@ -99,7 +99,7 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    ユーザーの入力が "Help" インテントである可能性が 80% より高い場合に Help ダイアログにコンテキストを切り替えることを意味します。  
    それ以下の場合は、ユーザーの入力は "Unknown intent" で処理されるので、Qna ダイアログに切り替えられます。
 
-   ![](./images/06/bfcomp_help_trigger_condition.jpg)
+   ![](./images/prev/06/bfcomp_help_trigger_condition.jpg)
 
 ---
 
@@ -111,19 +111,19 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
 
 2. [**User Settings**] - [**Settings**] を選択します。
 
-   ![](./images/06/luis_user_settings_1.jpg)
-   ![](./images/06/luis_user_settings_2.jpg)
+   ![](./images/prev/06/luis_user_settings_1.jpg)
+   ![](./images/prev/06/luis_user_settings_2.jpg)
 
 3. [**Starter_Key**] セクションの [**Primary Key**] をクリップボードにコピーします。  
    この後すぐに使います。
 
-   ![](./images/06/luis_user_settings_3.jpg)
+   ![](./images/prev/06/luis_user_settings_3.jpg)
 
 4. Bot Framework Composer に戻って、[**Start Bot**] または [**Restart Bot**] をクリックします。
 
 5. [**Publish LUIS models**] ダイアログが開いたら、[**LUIS Primary Key**] に LUIS ポータルでコピーした "Primary Key" を貼り付けて、[**OK**] をクリックします。
 
-   ![](./images/06/bfcomp_publish_luis_models.jpg)
+   ![](./images/prev/06/bfcomp_publish_luis_models.jpg)
 
 6. [**Test in Emulator**] が表示されれば、LUIS への発行と Bot の再起動が完了しています。
 
@@ -141,7 +141,7 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
 
    など、LUIS または QnA Maker で処理されます。
 
-   ![](./images/06/bfemu_test_qna_and_luis.jpg)
+   ![](./images/prev/06/bfemu_test_qna_and_luis.jpg)
 
 ---
 
