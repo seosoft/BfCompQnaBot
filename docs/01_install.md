@@ -2,7 +2,7 @@
 
 ハンズオンの最初に [**Bot Framework Composer**](https://docs.microsoft.com/ja-jp/composer/) で Bot 開発のための環境を構築します。
 
-このハンズオンでは、2020年5月に GA した [**Bot Framework Composer 1.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用します。  
+このハンズオンでは、2020年5月に GA、6月はじめにリビジョンアップした [**Bot Framework Composer 1.0.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用します。  
 実施の時期によっては画面の構成などが一部異なる可能性があります。
 
 > 参考として [ソースコードからビルドする方法](#%e5%8f%82%e8%80%83-%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%81%8b%e3%82%89%e3%83%93%e3%83%ab%e3%83%89%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95) も紹介します。  
@@ -17,23 +17,26 @@ Bot Framework Composer を使用するには、構築が簡単なデスクトッ
 Windows 版、macOS 版、Linux 版が用意されています。
 
 1. **Bot Framework Emulator インストール**  
-   [**Bot Framework Emulator**](https://github.com/microsoft/BotFramework-Emulator/releases) 最新版をダウンロードしてインストールします。  
+   [**Bot Framework Emulator**](https://github.com/microsoft/BotFramework-Emulator/releases) をダウンロードしてインストールします。  
 
-   <img src="./images/prev/01/bfemu_install_01.jpg" width="400px" />
+   <img src="./images/01/bfemu_install_01.jpg" width="400px" />
    <br />
-   <img src="./images/prev/01/bfemu_install_02.jpg" width="400px" />
+   <img src="./images/01/bfemu_install_02.jpg" width="400px" />
 
    Bot Framework Emulator は Bot 開発の **テスト用クライアント** として使用します。
 
 2. **.NET Core 3.1 SDK インストール**  
    [**.NET Core 3.1 SDK**](https://dotnet.microsoft.com/download/dotnet-core/3.1) をダウンロードしてインストールします。
 
-   <img src="./images/prev/01/dncore_install_01.jpg" width="400px" />
+   <img src="./images/01/dncore_install_01.jpg" width="400px" />
    <br />
-   <img src="./images/prev/01/dncore_install_02.jpg" width="400px" />
+   <img src="./images/01/dncore_install_02.jpg" width="400px" />
 
 3. **Bot Framework Composer インストール**  
    使用している OS にあわせて、**Bot Framework Composer** のインストーラーをダウンロードしてインストールします。
+
+   > 以下のリンクは公式サイトに掲載されているものですが、時期によっては少し古いバージョンのインストーラーを指すことがあるようです。  
+   > インストール後に最新版にアップデートしてください。（このあとの手順に記載しています）
 
    |OS|インストーラーのアドレス|
    |---|---|
@@ -41,16 +44,29 @@ Windows 版、macOS 版、Linux 版が用意されています。
    |macOS|[https://aka.ms/bf-composer-download-mac](https://aka.ms/bf-composer-download-mac)|
    |Linux|[https://aka.ms/bf-composer-download-linux](https://aka.ms/bf-composer-download-linux)|
 
-   <img src="./images/prev/01/bfcomp_install_01.jpg" width="480px" />
+   <img src="./images/01/bfcomp_install_01.jpg" width="480px" />
    <br />
-   <img src="./images/prev/01/bfcomp_install_02.jpg" width="480px" />
+   <img src="./images/01/bfcomp_install_02.jpg" width="480px" />
 
 4. **Bot Framework Composer 起動確認**  
    確認のために Bot Framework Composer を起動します。
+   
+   起動時に "New update available" というダイアログが表示されるかもしれません。  
+   その場合は次の手順で最新版にアップデートします。
 
-   ![](./images/prev/01/bfcomp_start.jpg)
+   ![](./images/01/bfcomp_start.jpg)
 
-5. **ngrok インストール**  
+5. **Bot Framework Composer を最新版にアップデート**  
+   Bot Framewoek Compouser を最新版にアップデートします。
+   起動時に "New update available" というダイアログが表示された場合は [**Okay**] をクリックしてアップデートを開始します。
+
+   <img src="./images/01/bfcomp_update_ok.jpg" width="480px" />
+
+   アップデートダイアログが表示されない場合でも、Bot Framework Composer インストール直後の **初回起動時** は [**Help**] - [**Check for Updates**] でアップデートの確認をします。
+
+   <img src="./images/01/bfcomp_help_check_updates.jpg" width="400px" />
+
+6. **ngrok インストール**  
    [**ngrok**](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
    インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
 
@@ -63,7 +79,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
    > - OAuth で認証したい場合
    > - ローカルで実行している Bot アプリケーションに他のマシンから接続したい場合
 
-6. **(オプション) Visual Studio Code インストール**  
+7. **(オプション) Visual Studio Code インストール**  
    [**Visual Studio Code**](https://code.visualstudio.com/) をダウンロードしてインストールします。
 
    このハンズオンの範囲では VSCode のインストールは必須ではありませんが、Bot Framework 開発を継続すると必要になることがあります。  
