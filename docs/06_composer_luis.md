@@ -35,7 +35,7 @@ Bot Framework Composer は、デフォルトの言語が "**en-us**" です。
 
 2. [**luis**] セクションの [**defaultLanguage**] を "**ja-jp**" に変更します。  
 
-   > あとで動作確認した際に Help Intent に該当する入力を正しく処理できない場合は、"**en-us**" に戻してみてください。  
+   > あとで動作確認した際に Help Intent に該当する入力を正しく処理できない場合は、"**en-us**" に戻してみてください。
 
    <img src="./images/06/bfcomp_settings_luis.jpg" width="540px" />
 
@@ -128,7 +128,7 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
 6. [**Test in Emulator**] が表示されれば、LUIS への発行と Bot の再起動が完了しています。
 
    > "ja-jp" の LUIS アプリケーションを生成できるようになると、例えば「このボットの使い方」のような入力でも Help Intent で処理されるようになります。  
-   > Bot Framework Composer 1.0.0 では "en-us" の LUIS アプリケーションのみ生成されます。
+   > Bot Framework Composer 1.0.1 では "en-us" の LUIS アプリケーションのみ生成されます。
 
 ---
 

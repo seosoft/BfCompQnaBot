@@ -9,7 +9,7 @@
 5. [Bot アプリケーションに Q&A 機能を実装](./docs/05_composer_qna.md)  
 6. [LUIS でユーザーの意図を予測する](./docs/06_composer_luis.md)  
 
-> このハンズオンでは、2020年5月に GA した [**Bot Framework Composer 1.0.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
+> このハンズオンでは、2020年5月に GA、6月はじめにリビジョンアップした [**Bot Framework Composer 1.0.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
 
 > 作成した Bot アプリケーションのAzure への発行については準備中です。
 
