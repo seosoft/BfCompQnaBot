@@ -20,13 +20,13 @@ QnA Maker で作ったナレッジベースを呼び出すためのダイアロ�
 1. [**+ Add**] - [**Add new dialog**] を選択して、QnA ダイアログを作成します。
    名前は "**Qna**" とします。
 
-   <img src="./images/prev/05/bfcomp_add_qna_dialog.jpg" width="480px" />
+   <img src="./images/05/bfcomp_add_qna_dialog.jpg" width="480px" />
    <br />
-   <img src="./images/prev/05/bfcomp_qna_dialog_name.jpg" width="540px" />
+   <img src="./images/05/bfcomp_qna_dialog_name.jpg" width="540px" />
 
 2. [**+**] - [**Access External Resources**] - [**Connect to QnA knowledgebase**] を選択します。
 
-   ![](./images/prev/05/bfcomp_add_qna_action.jpg)
+   ![](./images/05/bfcomp_add_qna_action.jpg)
 
 ---
 
@@ -41,15 +41,15 @@ QnA Maker で作ったナレッジベースを呼び出すためのダイアロ�
 
 2. [**Send a message**] アクションを削除します。
 
-   ![](./images/prev/05/bfcomp_delete_action.jpg)
+   ![](./images/05/bfcomp_delete_action.jpg)
 
 3. [**+**] - [**Dialog management**] - [**Begin a new dialog**] を選択します。
 
-   ![](./images/prev/05/bfcomp_unk_trigger_begin_qna_dialog.jpg)
+   ![](./images/05/bfcomp_unk_trigger_begin_qna_dialog.jpg)
 
 4. [**Begin a new dialog**] アクションを選択して、Property の [**Dialog name**] で "**Qna**" を選択します。
 
-   ![](./images/prev/05/bfcomp_unk_trigger_dialog_name.jpg)
+   ![](./images/05/bfcomp_unk_trigger_dialog_name.jpg)
 
 ---
 
@@ -61,7 +61,7 @@ QnA Maker への接続情報は **Bot Settings ファイル** に記述します
 
 2. "**qna**" セクションに [**QnA Maker を 発行した時の設定値**](04_create_qnamaker_knowledgebase.md) を設定します。
 
-   ![](./images/prev/05/bfcomp_settings_qna.jpg)
+   ![](./images/05/bfcomp_settings_qna.jpg)
 
 > Settings ファイルから分かる通り、Bot Framework Compmoser では "Connect to QnA Knowledgebase" を利用した QnA Maker 利用は一つのナレッジベースのみ接続可能です。  
 > 複数のナレッジベースを呼び出したい場合は "Send an HTTP Request" アクションを使うなどの工夫が必要です。
@@ -81,7 +81,7 @@ Bot Framework Emulator を使って動作確認します。
 3. Bot Framework Emulator で動作確認します。  
    例えば "**サポートされる言語は何**" と入力して、ナレッジベースから適切な Answer が返ってくることを確認します。
 
-   ![](./images/prev/05/bfemu_test_qna.jpg)
+   ![](./images/05/bfemu_test_qna.jpg)
 
 4. "**ヘルプ**" と入力すると「ユーザーの入力をオウム返しします」と応答することを確認します。  
    "ヘルプ" や "Help" を入力すると、すでに作成済みの "Help" ダイアログが応答していることが分かります。
