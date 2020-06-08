@@ -14,7 +14,8 @@
 
 Bot Framework Composer をインストールしていない場合は、[前のステップ](01_install.md) で Composer のインストールインストールを済ませてください。
 
-1. Bot Framework Composer を起動します。
+1. Bot Framework Composer を起動します。  
+   デスクトップアプリケーション版をインストールした場合は、スタートメニューに登録されたものを起動します。
 
    > ソースコードからビルドした場合は、Composer フォルダーで以下のコマンドを実行します。  
    >
@@ -26,11 +27,11 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
 2. Home 画面で [**New**] をクリックします。  
 
-   <img src="./images/prev/02/bfcomp_new_project.jpg" width="400px" />
+   <img src="./images/02/bfcomp_new_project.jpg" width="400px" />
 
 3. 今回は [**Create from Scratch**] を選択します。
 
-   <img src="./images/prev/02/bfcomp_create_scratch.jpg" width="540px" />
+   <img src="./images/02/bfcomp_create_scratch.jpg" width="540px" />
 
 4. 今回は [**Name**] を "**MyQnaBot**" とします。  
    [Location] は任意のフォルダーを選択します。
@@ -38,9 +39,10 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    このステップではオウム返し Bot を作りますが、以降のステップで QnA Bot 機能を追加します。  
    このためプロジェクト名は "MyQnaBot" とします。
 
-   <img src="./images/prev/02/bfcomp_project_name.jpg" width="540px" />
+   <img src="./images/02/bfcomp_project_name.jpg" width="540px" />
 
-   > プロジェクト作成後に [Creation Journey] が表示されます。興味がある方は Composer の使い方を覚えるために参照してください。  
+   > プロジェクト作成後に [Creation Journey] が表示されるかもしれません。  
+   > 興味がある方は Composer の使い方を覚えるために参照してください。  
    > 今回は [×] で閉じてしまってもかまいません。
 
 ---
@@ -51,11 +53,11 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
 1. [**+ Add**] - [**Add new trigger on MyQnaBot**] を選択します。
 
-   <img src="./images/prev/02/bfcomp_add_new_trigger.jpg" width="540px" />
+   <img src="./images/02/bfcomp_add_new_trigger.jpg" width="540px" />
 
 2. [**Create a trigger**] ダイアログで "**Unknown intent**" を選択します。
 
-   ![](./images/prev/02/bfcomp_create_unknown_intent_trigger.jpg)
+   <img src="./images/02/bfcomp_create_unknown_intent_trigger.jpg" width="480px" />
 
    > Trigger とは、ユーザーの入力に対して、処理を行い応答を返す契機になるものです。
    >
@@ -68,7 +70,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    ユーザーの入力に対して「メッセージを返す」アクションを追加しました。
 
-   ![](./images/prev/02/bfcomp_send_a_mes_unknown_intent.jpg)
+   ![](./images/02/bfcomp_send_a_mes_unknown_intent.jpg)
 
 
 4. [**Send a message**] アクションをクリックします。  
@@ -80,7 +82,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    先頭のハイフンおよび半角スペースは必須です。  
 
-   ![](./images/prev/02/bfcomp_message_lg.jpg)
+   ![](./images/02/bfcomp_message_lg.jpg)
 
    "**${turn.activity.text}**" はユーザーの入力内容です。  
    これでオウム返しするようになりました。確認してみます。
@@ -95,14 +97,14 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    Bot の準備中はボタンの左隣に [**Reloading**] と表示されます。  
    Bot が起動すると [**Test in emulator**] と表示されます。初めての [Start Bot] の操作では起動までに少し時間がかかります。
 
-   <img src="./images/prev/02/bfcomp_startbot.jpg" width="540px" />
+   <img src="./images/02/bfcomp_startbot.jpg" width="540px" />
    <br />
-   <img src="./images/prev/02/bfcomp_reloading.jpg" width="540px" />
+   <img src="./images/02/bfcomp_reloading.jpg" width="540px" />
 
 2. [**Test in Emulator**] をクリックします。  
    Bot Framework Emulator が自動的に起動します。
 
-   <img src="./images/prev/02/bfcomp_test_in_emulator.jpg" width="540px" />
+   <img src="./images/02/bfcomp_test_in_emulator.jpg" width="540px" />
 
 3. Bot Framewoek Emulator が起動したら何か入力します。  
    入力した内容で Bot が応答することを確認します。
@@ -110,7 +112,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    > Emulator が起動する（対話を始める）と、Bot が自動的に "Welcome to the EmptyBot sample" と応答してきます。  
    > これについては次のステップで説明、対応します。
 
-   ![](./images/prev/02/bfemu_say_something.jpg)
+   ![](./images/02/bfemu_say_something.jpg)
 
 Bot は期待通りに動作しました。
 
