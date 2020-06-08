@@ -93,7 +93,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
 3. 挨拶メッセージが変更されることを Emulator で確認します。  
    [Start Bot] または [Restart Bot] をクリックして、Bot を起動します。  
 
-   <img src="./images/prev/03/bfcomp_restart_bot.jpg" width="400px" />
+   <img src="./images/03/bfcomp_restart_bot.jpg" width="400px" />
 
 4. Bot が起動したら Bot Framework Emulator を開きます。
 
