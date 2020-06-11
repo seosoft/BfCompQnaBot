@@ -117,7 +117,7 @@ GA したことで、Bot Framework Composer はデスクトップアプリケー
 
 4. Bot Framework Composer ソースコード入手およびビルド  
 
-   4-1. コマンドプロンプト、PowerShell または Git Bash を開きます。(Windows の場合)  
+   4-1. コマンドプロンプト、PowerShell、Git Bash または [Windows Terminal](https://www.microsoft.com/ja-jp/p/windows-terminal/9n0dx20hk701) など、好みのターミナルを開きます。(Windows の場合)  
    その他の OS ではターミナルクライアントを開きます。  
 
    4-2. Bot Framework Composer をインストールする任意のフォルダーを作成して、そこに移動します。  
