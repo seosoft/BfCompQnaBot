@@ -9,6 +9,7 @@
 [4. Bot Framework Composer でアプリケーションを発行](#bot-framework-composer-でアプリケーションを発行)  
 [5. Azure ポータルで Bot のテスト](#azure-ポータルで-bot-のテスト)  
 [6. Bot Framework Emulator でテスト](#bot-framework-emulator-でテスト)
+[7. Azure 上のリソースの削除](#azure-上のリソースの削除)
 
 ---
 
@@ -221,6 +222,31 @@ Azure ポータル上の Web チャットでは動作したので、もう一つ
 4. 任意の入力をして Bot から適切な応答があることを確認します。  
    
    ![](./images/07/bfemu_test_webapp.jpg)
+
+---
+
+## Azure 上のリソースの削除
+
+Azure に作成したリソースはコストがかかります。  
+
+作成したアプリケーションを続けて使用するなどの場合（例えば、同僚に見せる、説明する）を覗いて、作成したリソースを削除してください。
+
+1. [Azure ポータル](https://portal.azure.com/) に接続します。
+
+2. リソースを作成した時の名前 ("name") を検索ボックスに入力して、リソースボックスを選択します。
+
+   > QnA Maker で作成したリソースについては、このハンズオンの手順通りに進めていれば無償の範囲です。
+
+   <img src="./images/07/az_search_rg.jpg" width="480px" />
+
+3. [**リソースグループの削除**] をクリックします。
+
+   <img src="./images/07/az_delete_rg.jpg" width="480px" />
+
+4. リソースグループの名前を入力して [削除] をクリックします。  
+   しばらく待つと、リソースグループに含まれるすべてのリソースが削除されます。
+
+   <img src="./images/07/az_delete_rg_confirm.jpg" width="480px" />
 
 ---
 
