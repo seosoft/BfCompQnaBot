@@ -8,7 +8,7 @@
 [3. 発行先のリソースを作成](#発行先のリソースを作成)  
 [4. Bot Framework Composer でアプリケーションを発行](#bot-framework-composer-でアプリケーションを発行)  
 [5. Azure ポータルで Bot のテスト](#azure-ポータルで-bot-のテスト)  
-[6. Bot Framework Emulator でテスト](#bot-framework-emulator-でテスト)
+[6. Bot Framework Emulator でテスト](#bot-framework-emulator-でテスト)  
 [7. Azure 上のリソースの削除](#azure-上のリソースの削除)
 
 ---
