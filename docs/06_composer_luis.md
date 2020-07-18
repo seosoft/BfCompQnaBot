@@ -160,5 +160,5 @@ Q&A Bot アプリケーションを開発は完了です。
 
 次のステップでは、作成したアプリケーションをクラウドに発行します。
 
-[前に戻る](05_composer_qna.md) | [次に進む](07_deploy_bot.md).md)  
+[前に戻る](05_composer_qna.md) | [次に進む](07_deploy_bot.md)  
 [目次に戻る](../README.md)
