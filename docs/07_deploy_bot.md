@@ -94,7 +94,7 @@ Bot Framework Composer では、必要な **リソースを一括して作成す
 
    ![](./images/07/shell_az_login.jpg)
 
-   > v1.0.1 では "User was not found." と表示されてリソースの作成ができないことがあります。  
+   > v1.0.2 では "User was not found." と表示されてリソースの作成ができないことがあります。  
    > これは **Microsoft アカウント** に紐づいた Azure サブスクリプションの場合に発生するようです。
    >
    > <img src="./images/07/shell_provision_error.jpg" width="320px" />
@@ -114,7 +114,7 @@ Bot Framework Composer では、必要な **リソースを一括して作成す
    "**{**" から "**}**" までの全体が Configuration です。これをクリップボードにコピーします。  
 
    > Configuration はメモ帳などに記録しておくことをお勧めします。
-   > このステップの最後（Bot Framework Emulator でのテスト）でも、Configuration の一部の値が必要になります
+   > このステップの最後（Bot Framework Emulator でのテスト）でも Configuration の一部の値が必要になります
 
    <img src="./images/07/shell_resources_created.jpg" width="540px" />
 
@@ -132,7 +132,7 @@ Bot Framework Composer では、必要な **リソースを一括して作成す
 
 Bot Framework Composer に戻って、作成したapplicationを Azure に発行します。
 
-1. Bot Framework Composer で [**Settings**] - [**+ Add new profile**] を選択して、 発行用のプロファイルを作成します。  
+1. Bot Framework Composer で [**Publish**] - [**+ Add new profile**] を選択して、 発行用のプロファイルを作成します。  
    入力したら [**Save**] をクリックします。
 
    |項目|内容|
