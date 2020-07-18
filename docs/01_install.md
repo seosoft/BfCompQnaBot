@@ -36,7 +36,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
    使用している OS にあわせて、**Bot Framework Composer** のインストーラーをダウンロードしてインストールします。
 
    > 以下のリンクは公式サイトに掲載されているものですが、時期によっては少し古いバージョンのインストーラーを指すことがあるようです。  
-   > インストール後に最新版にアップデートしてください。（このあとの手順に記載しています）
+   > インストール後に最新版であることを確認して、必要に応じてアップデートしてください。（このあとの手順に記載します）
 
    |OS|インストーラーのアドレス|
    |---|---|
@@ -50,15 +50,14 @@ Windows 版、macOS 版、Linux 版が用意されています。
 
 4. **Bot Framework Composer 起動確認**  
    確認のために Bot Framework Composer を起動します。
-   
-   起動時に "New update available" というダイアログが表示されるかもしれません。  
-   その場合は次の手順で最新版にアップデートします。
 
    ![](./images/01/bfcomp_start.jpg)
 
+   起動時に "**New update available**" というダイアログが表示されるかもしれません。  
+   その場合は次の手順で最新版にアップデートします。
+
 5. **Bot Framework Composer を最新版にアップデート**  
-   Bot Framewoek Compouser を最新版にアップデートします。
-   起動時に "New update available" というダイアログが表示された場合は [**Okay**] をクリックしてアップデートを開始します。
+   起動時に "**New update available**" というダイアログが表示された場合は、[**Okay**] をクリックしてアップデートを開始します。
 
    <img src="./images/01/bfcomp_update_ok.jpg" width="480px" />
 
