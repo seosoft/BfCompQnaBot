@@ -23,7 +23,7 @@ LUIS (Language Understanding) とは、自然言語の入力に対して、
 > "Language Understanding" はプレビューでは "LUIS" と呼ばれていました。  
 > GA して Language Understanding と名称が変わりましたが、ドキュメントやライブラリにも LUIS という表記が残っていたり、サービスが GA した後も LUIS と呼ばれることが多くあります。
 
-> Bot Framework Composer v1.0.1 では日本語対応した LUIS アプリケーションは作成されません。  
+> Bot Framework Composer v1.0.2 では日本語対応した LUIS アプリケーションは作成されません。  
 > 必ず "en-us" になります。  
 >
 > 以下では、今後の日本語対応を見越した手順を記載しています。
@@ -147,6 +147,11 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
    など、LUIS または QnA Maker で処理されます。
 
    ![](./images/06/bfemu_test_qna_and_luis.jpg)
+
+2. "ヘルプ" などと入力した際には LUIS で入力の意図を類推していることを確認します。
+ 
+   Bot Framework Emulator での見た目は正規表現を使っていた時と同じに見えるかもしれません。  
+   Emulator の右下のトレースを見ると、今回は確かに "LUIS" への問い合わせが実行されていることがわかります。
 
 ---
 
