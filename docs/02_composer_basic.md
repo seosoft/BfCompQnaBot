@@ -41,9 +41,10 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    <img src="./images/02/bfcomp_project_name.jpg" width="540px" />
 
-   > プロジェクト作成後に [Creation Journey] が表示されるかもしれません。  
-   > 興味がある方は Composer の使い方を覚えるために参照してください。  
-   > 今回は [×] で閉じてしまってもかまいません。
+   > プロジェクト作成後に [Creation Journey] が表示されるかもしれません。興味がある方は Composer の使い方を覚えるために参照してください。  
+   > 今回は [×] で閉じてしまってもかまいません。  
+   >
+   > Composer のリビジョンによっては [Creation Journey] が表示されないかもしれません。その場合はそのまま進めてください。
 
 ---
 
@@ -84,7 +85,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    ![](./images/02/bfcomp_message_lg.jpg)
 
-   "**${turn.activity.text}**" はユーザーの入力内容です。  
+   "**${turn.activity.text}**" はユーザーが入力した内容です。  
    これでオウム返しするようになりました。確認してみます。
 
 ---
@@ -100,6 +101,10 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    <img src="./images/02/bfcomp_startbot.jpg" width="540px" />
    <br />
    <img src="./images/02/bfcomp_reloading.jpg" width="540px" />
+
+   > ファイアウォールの設定画面が表示された場合は、適切な設定をします。  
+   >
+   > <img src="./images/02/win_set_firewalls.jpg" width="400px" />
 
 2. [**Test in Emulator**] をクリックします。  
    Bot Framework Emulator が自動的に起動します。

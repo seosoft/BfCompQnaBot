@@ -225,7 +225,7 @@ Bot Framework Emulator で動作を見てみます。
    > Intent の分類が比較的簡単なルールの場合には、[**Recognizer Type**] を "**Regular Expression**" にすることができます。  
    >
    > ユーザーに自由な入力を認める場合は **LUIS (Language Understanding)** で分類する必要があります。（例えば「ヘルプ」以外に「このBotの使い方」や「ボットの機能」など）  
-   > LUIS についてはあとのステップで取り上げます。 
+   > LUIS についてはあとのステップで取り上げます。
 
 ---
 

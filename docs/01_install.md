@@ -2,8 +2,8 @@
 
 ハンズオンの最初に [**Bot Framework Composer**](https://docs.microsoft.com/ja-jp/composer/) で Bot 開発のための環境を構築します。
 
-このハンズオンでは、2020年5月に GA、6月はじめにリビジョンアップした [**Bot Framework Composer 1.0.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用します。  
-実施の時期によっては画面の構成などが一部異なる可能性があります。
+このハンズオンでは、2020年5月に GA、7月前半にリビジョンアップした [**Bot Framework Composer 1.0.2**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用します。  
+ハンズオン実施の時期によっては画面の構成などが一部異なる可能性があります。
 
 > 参考として [ソースコードからビルドする方法](#%e5%8f%82%e8%80%83-%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%81%8b%e3%82%89%e3%83%93%e3%83%ab%e3%83%89%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95) も紹介します。  
 > 不具合修正や機能追加・変更が、アプリケーション版より早いタイミングで行われる可能性があります。  
@@ -36,7 +36,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
    使用している OS にあわせて、**Bot Framework Composer** のインストーラーをダウンロードしてインストールします。
 
    > 以下のリンクは公式サイトに掲載されているものですが、時期によっては少し古いバージョンのインストーラーを指すことがあるようです。  
-   > インストール後に最新版にアップデートしてください。（このあとの手順に記載しています）
+   > インストール後に最新版であることを確認して、必要に応じてアップデートしてください。（このあとの手順に記載します）
 
    |OS|インストーラーのアドレス|
    |---|---|
@@ -50,15 +50,14 @@ Windows 版、macOS 版、Linux 版が用意されています。
 
 4. **Bot Framework Composer 起動確認**  
    確認のために Bot Framework Composer を起動します。
-   
-   起動時に "New update available" というダイアログが表示されるかもしれません。  
-   その場合は次の手順で最新版にアップデートします。
 
    ![](./images/01/bfcomp_start.jpg)
 
+   起動時に "**New update available**" というダイアログが表示されるかもしれません。  
+   その場合は次の手順で最新版にアップデートします。
+
 5. **Bot Framework Composer を最新版にアップデート**  
-   Bot Framewoek Compouser を最新版にアップデートします。
-   起動時に "New update available" というダイアログが表示された場合は [**Okay**] をクリックしてアップデートを開始します。
+   起動時に "**New update available**" というダイアログが表示された場合は、[**Okay**] をクリックしてアップデートを開始します。
 
    <img src="./images/01/bfcomp_update_ok.jpg" width="480px" />
 
