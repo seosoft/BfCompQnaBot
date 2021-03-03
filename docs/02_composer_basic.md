@@ -99,8 +99,6 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    Bot が起動すると [**Test in emulator**] と表示されます。初めての [Start Bot] の操作では起動までに少し時間がかかります。
 
    <img src="./images/02/bfcomp_startbot.jpg" width="540px" />
-   <br />
-   <img src="./images/02/bfcomp_reloading.jpg" width="540px" />
 
    > ファイアウォールの設定画面が表示された場合は、適切な設定をします。  
    >
