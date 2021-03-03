@@ -10,10 +10,11 @@
 6. [LUIS でユーザーの意図を予測](./docs/06_composer_luis.md)  
 7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)
 
-> このハンズオンでは [**Bot Framework Composer 1.0.2**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。  
-> Bot Framework Composer は 2020年5月に GA して、2020年7月に 1.0.2 がリリースされています。
+> このハンズオンでは [**Bot Framework Composer 1.3.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
 
 ---
+
+<!-- TODO: 画像差し替え -->
 
 ![](./docs/images/bfcomp_main.jpg)
 
@@ -29,5 +30,5 @@ Bot Framework Composer の公式ドキュメントは [**こちら**](https://do
 
 ---
 
-Copyright (C) 2020 Seosoft All rights reserved.  
+Copyright (C) 2020-2021 Seosoft All rights reserved.  
 本コンテンツの著作権、および本コンテンツ中に出てくる商標権、団体名、ロゴ、製品、サービスなどはそれぞれ、各権利保有者に帰属します。
