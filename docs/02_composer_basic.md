@@ -67,14 +67,14 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    > 今のところユーザーからの入力を受け付けるものは Unknown intent だけです。  
 
 3. 画面中央の "**Authoring canvas**" に Unknown intent が表示されたら、[**+**] をクリックします。  
-   続いて [**Send a message**] を選択します。
+   続いて [**Send a response**] を選択します。
 
    ユーザーの入力に対して「メッセージを返す」アクションを追加しました。
 
    ![](./images/02/bfcomp_send_a_mes_unknown_intent.jpg)
 
 
-4. [**Send a message**] アクションをクリックします。  
+4. [**Send a response**] アクションをクリックします。  
    続いて、画面右側の Property の [**Language Generation**] に以下を入力します。
 
    ```txt

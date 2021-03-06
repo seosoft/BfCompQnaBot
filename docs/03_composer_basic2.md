@@ -9,11 +9,38 @@
 
 メッセージとしてはどちらもシンプルなものですが、Bot アプリケーションを拡張する重要な操作です。
 
-[1. 挨拶メッセージの確認](#%e6%8c%a8%e6%8b%b6%e3%83%a1%e3%83%83%e3%82%bb%e3%83%bc%e3%82%b8%e3%81%ae%e7%a2%ba%e8%aa%8d)  
-[2. 挨拶メッセージの変更](#%e6%8c%a8%e6%8b%b6%e3%83%a1%e3%83%83%e3%82%bb%e3%83%bc%e3%82%b8%e3%81%ae%e5%a4%89%e6%9b%b4)
-[3. ヘルプ ダイアログの追加](#%e3%83%98%e3%83%ab%e3%83%97-%e3%83%80%e3%82%a4%e3%82%a2%e3%83%ad%e3%82%b0%e3%81%ae%e8%bf%bd%e5%8a%a0)  
-[4. ヘルプ ダイアログへの切り替え](#%e3%83%98%e3%83%ab%e3%83%97-%e3%83%80%e3%82%a4%e3%82%a2%e3%83%ad%e3%82%b0%e3%81%b8%e3%81%ae%e5%88%87%e3%82%8a%e6%9b%bf%e3%81%88)  
-[5. Bot Framework Emulator で動作確認](#bot-framework-emulator-%e3%81%a7%e5%8b%95%e4%bd%9c%e7%a2%ba%e8%aa%8d)
+[0. 言語の変更](#言語の変更)  
+[1. 挨拶メッセージの確認](#挨拶メッセージの確認)  
+[2. 挨拶メッセージの変更](#挨拶メッセージの変更)  
+[3. ヘルプ ダイアログの追加](#ヘルプ-ダイアログの追加)  
+[4. ヘルプ ダイアログへの切り替え](#ヘルプ-ダイアログへの切り替え)  
+[5. Bot Framework Emulator で動作確認](#bot-framework-emulator-で動作確認)
+
+---
+
+## 言語の変更
+
+Bot Framework Composer は、
+
+- Composer の UI の言語
+- Bot が対象とする言語
+
+を変更可能です。
+
+Composer の UI 言語を変更するには、[Composer Settings] - [Application Settings] で先頭の [Composer UI] を変更します。
+
+![](./images/03/bfcomp_compsetting_uilang.jpg)
+
+> このハンズオン資料では、Composer UI は英語のままで進めます。
+
+プロジェクトの Bot が対象とする言語は、以下の操作で変更します。
+
+1. [Project Settings] で [Bot language] セクションまで進む
+2. [Manage bot languages] を選択  
+   ![](./images/03/bfcomp_projset_managelang.jpg)
+3. [To which language ～] で "Japanese (Japan)" を選択して、さらに [When done, switch to the newly language ～] を選択する。  
+最後に [Done] で言語を確定  
+   ![](./images/03/bfcomp_managelang_jajp.jpg)
 
 ---
 
@@ -25,7 +52,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
 
 - Bot が動作していることを知らせる
 - Bot の機能を知らせる
-- ユーザーが最初に何をできるのかを知らせる
+- ユーザーが最初に何をすればいいのかを知らせる
 
 などが目的です。
 
@@ -67,7 +94,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
    ![](./images/03/bfcomp_greting_send_mes_lg.jpg)
 
 5. 挨拶メッセージが定義されている場所を確認します。  
-   [**Bot Response**] - [**All**] に "#WelcomeUser" テンプレートが定義されていることを確認します。
+   [**Bot Response**] - [**Common**] に "#WelcomeUser" テンプレートが定義されていることを確認します。
 
    ![](./images/03/bfcomp_botresp_welcomeuser.jpg)
 
@@ -76,7 +103,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
 ## 挨拶メッセージの変更
 
 1. 挨拶メッセージを変更します。  
-   [**Edit mode**] を有効にします。
+   [**Show code**] を有効にします。
 
 2. "**WelcomeUser**" の定義を以下の内容に変更します。
 
@@ -95,9 +122,10 @@ Bot アプリケーションが挨拶メッセージを返すのは
 
    <img src="./images/03/bfcomp_restart_bot.jpg" width="400px" />
 
-4. Bot が起動したら Bot Framework Emulator を開きます。
+4. Bot が起動したら Bot Framework Emulator を開き、Emulator が日本語ロケールで動作するように設定変更します。  
+   [Settings] で [Locale] に "ja-jp" と入力して [Save] します。 
 
-   [**Restart Conversation - New User ID**] を何度かクリックして、ランダムに挨拶メッセージが変わることを確認します。
+5. [Live Chat] タブに戻って、[**Restart Conversation - New User ID**] を何度かクリックして、ランダムに挨拶メッセージが変わることを確認します。
 
    ![](./images/03/bfemu_restart_conv.jpg)
 
@@ -120,14 +148,48 @@ Bot にヘルプメッセージを応答する機能を追加します。
 > ダイアログは一般的には、他から独立した一連の対話を定義するために使用します。  
 > ここでの手順は一つのメッセージを応答するだけなので、必ずしもダイアログにする必要はありません。  
 >
-> またオウム返し Bot でヘルプ機能は不要なはずですが、今回はダイアログの定義と呼び出し方とを理解するために、シンプルな処理ですがダイアログを使うことにします。
+> またオウム返し Bot でヘルプ機能は不要なはずですが、シンプルな処理ですが今回はダイアログを使うことにします。これはダイアログの定義と呼び出し方とを理解するためです。
 
-1. [**Bot Response**] にヘルプメッセージを定義します。  
-   [Bot Response] を選択して [**Edit mode**] に変更します。  
-   以下の "**ShowHelp**" 定義を追加します。
+1. [**Design**] - [**MyQnaBot**] - [**Add a dialog**] を選択します。  
+   なお選択する "MyQnaBot" は Dialog ではなくてプロジェクトのほうです。
+
+   <img src="./images/03/bfcomp_add_new_dialog.jpg" width="540px" />
+
+2. [**Name**] にダイアログの名前を入力します。  
+   今回は "**Help**" とします。
+
+   <img src="./images/03/bfcomp_help_dialog_name.jpg" width="540px" />
+
+3. [**Help**] - [**BeginDialog**] で [**+**] をクリックして、続いて [**Send a response**] をクリックします。
+
+   ![](./images/03/bfcomp_help_add_send_res.jpg)
+
+4. [**Send a response**] をクリックして、Property の [**Language Generation**] に以下を入力します。
+
+   ```txt
+   - ${ShowHelp()}
+   ```  
+
+   ![](./images/03/bfcomp_help_send_mes_lg.jpg)
+
+   ```
+   この操作では "${ShowHelp()}" に対してエラーメッセージが表示されます。  
+   これは ShowHelp() がまだ定義されていないためです。ShowHelp はこのあとですぐに定義するので気にせずに先に進みます。
+   ```
+
+5. [**Bot Response**] にヘルプメッセージを定義します。  
+   [Bot Response] を選択して [**Help**] で [**New template**] を選択します。  
+   ![](./images/03/bfcomp_botresp_newtemp.jpg)
+
+6. 新規作成された行の [**Name**] をクリックして "**#ShowHelp**" に変更します。  
+   ![](./images/03/bfcomp_botresp_rename_showhelp.jpg)  
+   
+7. "#ShowHelp" のメニューを開いて [**Edit**] を選択します。  
+   ![](./images/03/bfcomp_botresp_edit_showhelp.jpg)
+
+8. "**ShowHelp**" の定義を以下の内容に変更します。
 
    ````txt
-   # ShowHelp
    - ```Azure についての疑問に答えます。
 
    質問を入力してください。
@@ -138,27 +200,6 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
    > **```** (バッククォート 3個) で囲むことで、複数行メッセージを定義できます。
 
-2. [**Dialog**] - [**+ Add**] - [**Add new dialog**] を選択します。  
-
-   <img src="./images/03/bfcomp_add_new_dialog.jpg" width="540px" />
-
-3. [**Name**] にダイアログの名前を入力します。  
-   今回は "**Help**" とします。
-
-   <img src="./images/03/bfcomp_help_dialog_name.jpg" width="540px" />
-
-4. [**+**] をクリックして、続いて [**Send a message**] をクリックします。
-
-   ![](./images/03/bfcomp_help_add_send_res.jpg)
-
-5. [**Send a response**] をクリックして、Property の [**Language Generation**] に以下を入力します。
-
-   ```txt
-   - ${ShowHelp()}
-   ```
-
-   ![](./images/03/bfcomp_help_send_mes_lg.jpg)
-
 ---
 
 ## ヘルプ ダイアログへの切り替え
@@ -166,20 +207,19 @@ Bot にヘルプメッセージを応答する機能を追加します。
 ユーザーの入力は "**MyQnaBot**" が受け取ります。  
 ヘルプメッセージを表示するには、メインからヘルプ ダイアログへの **コンテキスト切り替え** が必要です。
 
-1. "**MyQnaBot**" を選択して、Property の [**Recognizer Type**] で "**Regular Expression**" を選択します。
+1. "**MyQnaBot**" ダイアログを選択して、Property の [**Recognizer Type**] で "**Regular Expression recognizer**" を選択します。
 
    ![](./images/03/bfcomp_set_rectype.jpg)
 
    > 今までは Intent（＝意図、ユーザーが Bot に何をさせようとしているのか）を分類するルールを持っていませんでした。  
-   > この手順で正規表現でユーザー入力の Intent を分類するようになりました。
+   > この手順で正規表現でユーザー入力の意図を分類するようになりました。
 
 2. ヘルプダイアログを呼び出すための Trigger を "**MyQnaBot**" に追加します。  
-   [**+ Add**] - [**Add new trigger on MyQnaBot**] を選択します。
+   "MyQnaBot" ダイアログで [**Add a trigger**] を選択します。
 
    <img src="./images/03/bfcomp_add_help_trigger.jpg" width="480px" />
 
-3. "MyEchoBot.Main" で [**New Trigger**] を選択します。  
-   [**Create a trigger**] ダイアログが開いたら、以下を入力・選択をします。
+3. [**Create a trigger**] ダイアログが開いたら、以下を入力・選択をします。
 
    |項目名|値|
    |---|---|
