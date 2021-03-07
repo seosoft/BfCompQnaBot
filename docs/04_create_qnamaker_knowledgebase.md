@@ -45,8 +45,8 @@ QnA Maker のリソースを Azure ポータルで作成します。
    |Azure Search の場所|任意|
    |Azure Search 価格レベル|任意。選択可能ならハンズオンの範囲では F|
    |アプリ名|任意。固有の名前が必要なので、例えば "AzureFaq" に自分の名前や日付などを付けたもの|
-   |Web サイトの場所|任意|
-   |App Insights|今回は 無効|
+   |Web サイトの場所|今回は "米国西部"|
+   |App Insights|今回は "無効"|
 
    <br />
    <img src="./images/04/azure_create_qna.jpg" width="560px" />
