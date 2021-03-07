@@ -51,7 +51,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
 4. **Bot Framework Composer 起動確認**  
    確認のために Bot Framework Composer を起動します。
 
-   ![](./images/01/bfcomp_start.jpg)
+   <img src="./images/01/bfcomp_start.jpg" width="540px" />
 
    起動時に "**New update available**" というダイアログが表示されるかもしれません。  
    その場合は次の手順で最新版にアップデートします。
@@ -63,7 +63,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
 
    アップデートダイアログが表示されない場合でも、Bot Framework Composer インストール直後の **初回起動時** は [**Help**] - [**Check for Updates**] でアップデートの確認をします。
 
-   <img src="./images/01/bfcomp_help_check_updates.jpg" width="400px" />
+   <img src="./images/01/bfcomp_help_check_updates.jpg" width="480px" />
 
 6. **ngrok インストール**  
    [**ngrok**](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  

@@ -27,7 +27,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
 2. Home 画面で [**New**] をクリックします。  
 
-   <img src="./images/02/bfcomp_new_project.jpg" width="400px" />
+   <img src="./images/02/bfcomp_new_project.jpg" width="480px" />
 
 3. 今回は [**Create from Scratch**] を選択します。
 
@@ -71,7 +71,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    ユーザーの入力に対して「メッセージを返す」アクションを追加しました。
 
-   ![](./images/02/bfcomp_send_a_mes_unknown_intent.jpg)
+   <img src="./images/02/bfcomp_send_a_mes_unknown_intent.jpg" width="540px" />
 
 
 4. [**Send a response**] アクションをクリックします。  
@@ -83,7 +83,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    先頭のハイフンおよび半角スペースは必須です。  
 
-   ![](./images/02/bfcomp_message_lg.jpg)
+   <img src="./images/02/bfcomp_message_lg.jpg" width="540px" />
 
    "**${turn.activity.text}**" はユーザーが入力した内容です。  
    これでオウム返しするようになりました。確認してみます。
@@ -118,7 +118,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    > Emulator が起動する（対話を始める）と、Bot が自動的に "Welcome to the EmptyBot sample" と応答してきます。  
    > これについては次のステップで説明、対応します。
 
-   ![](./images/02/bfemu_say_something.jpg)
+   <img src="./images/02/bfemu_say_something.jpg" width="540px" />
 
 Bot は期待通りに動作しました。
 

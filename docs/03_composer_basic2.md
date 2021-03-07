@@ -29,7 +29,7 @@ Bot Framework Composer は、
 
 Composer の UI 言語を変更するには、[Composer Settings] - [Application Settings] で先頭の [Composer UI] を変更します。
 
-![](./images/03/bfcomp_compsetting_uilang.jpg)
+<img src="./images/03/bfcomp_compsetting_uilang.jpg" width="480px" />
 
 > このハンズオン資料では、Composer UI は英語のままで進めます。
 
@@ -37,10 +37,11 @@ Composer の UI 言語を変更するには、[Composer Settings] - [Application
 
 1. [Project Settings] で [Bot language] セクションまで進む
 2. [Manage bot languages] を選択  
-   ![](./images/03/bfcomp_projset_managelang.jpg)
+   
+   <img src="./images/03/bfcomp_projset_managelang.jpg" width="480px" />
 3. [To which language ～] で "Japanese (Japan)" を選択して、さらに [When done, switch to the newly language ～] を選択する。  
 最後に [Done] で言語を確定  
-   ![](./images/03/bfcomp_managelang_jajp.jpg)
+   <img src="./images/03/bfcomp_managelang_jajp.jpg" width="480px" />
 
 ---
 
@@ -68,7 +69,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
 
 1. "**MyQnaBot**" の [**Greeting**] Trigger を選択します。
 
-   ![](./images/03/bfcomp_select_greeting_trigger.jpg)
+   <img src="./images/03/bfcomp_select_greeting_trigger.jpg" width="540px" />
 
 2. "**Send a response**" アクションを選択します。
 
@@ -79,7 +80,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
    - ${WelcomeUser()}
    ```
 
-   ![](./images/03/bfcomp_greting_send_mes.jpg)
+   <img src="./images/03/bfcomp_greting_send_mes.jpg" width="540px" />
 
 4. "**WelcomeUser()**" の部分でマウスホバーします。  
    以下の内容がポップアップ表示されます。
@@ -91,12 +92,12 @@ Bot アプリケーションが挨拶メッセージを返すのは
    これが挨拶メッセージとして返されるものです。  
    前のステップで Bot Framework Emulator で確認したものと同じです。
 
-   ![](./images/03/bfcomp_greting_send_mes_lg.jpg)
+   <img src="./images/03/bfcomp_greting_send_mes_lg.jpg" width="540px" />
 
 5. 挨拶メッセージが定義されている場所を確認します。  
    [**Bot Response**] - [**Common**] に "#WelcomeUser" テンプレートが定義されていることを確認します。
 
-   ![](./images/03/bfcomp_botresp_welcomeuser.jpg)
+   <img src="./images/03/bfcomp_botresp_welcomeuser.jpg" width="540px" />
 
 ---
 
@@ -113,7 +114,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
    - ようこそ、Echo Bot へ
    ```
 
-   ![](./images/03/bfcomp_botresp_edit_welcomeuser.jpg)
+   <img src="./images/03/bfcomp_botresp_edit_welcomeuser.jpg" width="540px" />
 
    メッセージの内容を2行にしたことにより、ランダムでどちらかのメッセージを返すようになります。
 
@@ -129,7 +130,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
 
 5. [Live Chat] タブに戻って、[**Restart Conversation - New User ID**] を何度かクリックして、ランダムに挨拶メッセージが変わることを確認します。
 
-   ![](./images/03/bfemu_restart_conv.jpg)
+   <img src="./images/03/bfemu_restart_conv.jpg" width="540px" />
 
    [Restart Conversation] は、ユーザーと Bot との対話を再起動することを意味します。  
    対話が新しく始まるので、そのたびに挨拶メッセージを見ることができます。
@@ -164,7 +165,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
 3. [**Help**] - [**BeginDialog**] で [**+**] をクリックして、続いて [**Send a response**] をクリックします。
 
-   ![](./images/03/bfcomp_help_add_send_res.jpg)
+   <img src="./images/03/bfcomp_help_add_send_res.jpg" width="540px" />
 
 4. [**Send a response**] をクリックして、Property の [**Language Generation**] に以下を入力します。
 
@@ -172,7 +173,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
    - ${ShowHelp()}
    ```  
 
-   ![](./images/03/bfcomp_help_send_mes_lg.jpg)
+   <img src="./images/03/bfcomp_help_send_mes_lg.jpg" width="540px" />
 
    ```
    この操作では "${ShowHelp()}" に対してエラーメッセージが表示されます。  
@@ -181,13 +182,13 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
 5. [**Bot Response**] にヘルプメッセージを定義します。  
    [Bot Response] を選択して [**Help**] で [**New template**] を選択します。  
-   ![](./images/03/bfcomp_botresp_newtemp.jpg)
+   <img src="./images/03/bfcomp_botresp_newtemp.jpg" width="540px" />
 
 6. 新規作成された行の [**Name**] をクリックして "**#ShowHelp**" に変更します。  
-   ![](./images/03/bfcomp_botresp_rename_showhelp.jpg)  
+   <img src="./images/03/bfcomp_botresp_rename_showhelp.jpg" width="540px" />
    
 7. "#ShowHelp" のメニューを開いて [**Edit**] を選択します。  
-   ![](./images/03/bfcomp_botresp_edit_showhelp.jpg)
+   <img src="./images/03/bfcomp_botresp_edit_showhelp.jpg" width="540px" />
 
 8. "**ShowHelp**" の定義を以下の内容に変更します。
 
@@ -198,7 +199,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
    ```
    ````
 
-   ![](./images/03/bfcomp_botresp_help.jpg)
+   <img src="./images/03/bfcomp_botresp_help.jpg" width="540px" />
 
    > **```** (バッククォート 3個) で囲むことで、複数行メッセージを定義できます。
 
@@ -211,7 +212,7 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
 1. "**MyQnaBot**" ダイアログを選択して、Property の [**Recognizer Type**] で "**Regular Expression recognizer**" を選択します。
 
-   ![](./images/03/bfcomp_set_rectype.jpg)
+   <img src="./images/03/bfcomp_set_rectype.jpg" width="540px" />
 
    > 今までは Intent（＝意図、ユーザーが Bot に何をさせようとしているのか）を分類するルールを持っていませんでした。  
    > この手順で正規表現でユーザー入力の意図を分類するようになりました。
@@ -233,11 +234,11 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
 4. [**+**] をクリックして、続いて [**Dialog Management**] - [**Begin a new dialog**] をクリックします。
 
-   ![](./images/03/bfcomp_add_help_begin_dialog.jpg)
+   <img src="./images/03/bfcomp_add_help_begin_dialog.jpg" width="540px" />
 
 5. [**Begin a new dialog**] アクションの Property の [**Dialog name**] で "**Help**" を選択します。
 
-   ![](./images/03/bfcomp_set_help_dialog_name.jpg)
+   <img src="./images/03/bfcomp_set_help_dialog_name.jpg" width="540px" />
 
 ---
 
@@ -262,7 +263,7 @@ Bot Framework Emulator で動作を見てみます。
    |使い方|Azure についての質問に答えます|
    |任意の入力|「(入力した内容)」と言いましたね|
 
-   ![](./images/03/bfemu_test_help.jpg)
+   <img src="./images/03/bfemu_test_help.jpg" width="540px" />
 
    > Intent の分類が比較的簡単なルールの場合には、[**Recognizer Type**] を "**Regular Expression**" にすることができます。  
    >
