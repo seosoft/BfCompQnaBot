@@ -109,7 +109,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    <img src="./images/02/bfcomp_test_in_emulator.jpg" width="540px" />
 
-3. Bot Framewoek Emulator が起動したら何か入力します。  
+3. Bot Framework Emulator が起動したら何か入力します。  
    入力した内容で Bot が応答することを確認します。
 
    > Emulator が起動する（対話を始める）と、Bot が自動的に "Welcome to the EmptyBot sample" と応答してきます。  
