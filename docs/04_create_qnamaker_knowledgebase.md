@@ -51,6 +51,9 @@ QnA Maker のリソースを Azure ポータルで作成します。
    <br />
    <img src="./images/04/azure_create_qna.jpg" width="560px" />
 
+   > Bot Framework Composer では QnA Maker のデフォルトリージョンは "米国西部" になっています。  
+   > [Project Settings] で変更することは可能ですが、今回は "米国西部" のままで進めます。
+
 5. 作成したリソースグループを開いて "**App Service プラン**" を選択します。
 
    <img src="./images/04/azure_rg.jpg" width="560px" />
