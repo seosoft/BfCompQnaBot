@@ -125,7 +125,7 @@ Bot アプリケーションが挨拶メッセージを返すのは
 4. Bot が起動したら Bot Framework Emulator を開き、Emulator が日本語ロケールで動作するように設定変更します。  
    [**Settings**] で [**Locale**] に "**ja-jp**" と入力して [Save] します。  
    
-   ![](./images/03/bfemu_set_locale.jpg)
+   <img src="./images/03/bfemu_set_locale.jpg" width="480px" />
 
 5. [Live Chat] タブに戻って、[**Restart Conversation - New User ID**] を何度かクリックして、ランダムに挨拶メッセージが変わることを確認します。
 
