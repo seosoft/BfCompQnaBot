@@ -2,64 +2,44 @@
 
 [前のステップ](05_composer_qna.md) で、QnA Maker を使った Q&A 機能を Bot アプリケーションに 追加しました。
 
-このステップでは、[LUIS (Language Understanding)](https://azure.microsoft.com/ja-jp/services/cognitive-services/language-understanding-intelligent-service/) を使って、ユーザーの意図を予測するように変更します。  
-（[Bot Framework Composer の基礎 - 2](03_composer_basic2.md) では、正規表現でユーザーの意図を認識しました）
+このステップでは、[**Language Understanding** (LUIS)](https://azure.microsoft.com/ja-jp/services/cognitive-services/language-understanding-intelligent-service/) を使って、ユーザーの意図を予測するように変更します。  
+（[Bot Framework Composer の基礎 - 2](03_composer_basic2.md) では、**正規表現** でユーザーの意図を認識しました）
 
-[1. LUIS 利用の準備 (Settings ファイルの変更)](#luis-%e5%88%a9%e7%94%a8%e3%81%ae%e6%ba%96%e5%82%99-settings-%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%81%ae%e5%a4%89%e6%9b%b4)  
-[2. Recognizer Type の変更](#recognizer-type-%e3%81%ae%e5%a4%89%e6%9b%b4)  
-[3. help Trigger のフレーズの入力](#help-trigger-%e3%81%ae%e3%83%95%e3%83%ac%e3%83%bc%e3%82%ba%e3%81%ae%e5%85%a5%e5%8a%9b)  
-[4. LUIS への接続と Bot の再起動](#luis-%e3%81%b8%e3%81%ae%e6%8e%a5%e7%b6%9a%e3%81%a8-bot-%e3%81%ae%e5%86%8d%e8%b5%b7%e5%8b%95)  
-[5. Bot Framework Emulator で動作確認](#bot-framework-emulator-%e3%81%a7%e5%8b%95%e4%bd%9c%e7%a2%ba%e8%aa%8d)  
+[1. Recognizer Type の変更](#recognizer-type-の変更)  
+[2. help Trigger のフレーズの入力](#help-trigger-のフレーズの入力)  
+[3. Language Understanding アプリケーションの作成](#language-understanding-アプリケーションの作成)  
+[4. Language Understanding への接続](#language-understanding-への接続)  
+[5. Bot Framework Emulator で動作確認](#help-trigger-のフレーズの入力)  
 
-LUIS (Language Understanding) とは、自然言語の入力に対して、
+Language Understanding (LUIS) とは、自然言語による入力に対して、
 
 - 全体の意味を予測
 - 関連性のある詳細な情報を引き出す
 
 サービスです。  
 
-このハンズオンでは、ヘルプを呼び出す範囲で LUIS を使用するだけなので効果が実感しづらいですが、実装手順を理解することを目的とします。
-
 > "Language Understanding" はプレビューでは "LUIS" と呼ばれていました。  
-> GA して Language Understanding と名称が変わりましたが、ドキュメントやライブラリにも LUIS という表記が残っていたり、サービスが GA した後も LUIS と呼ばれることが多くあります。
+> GA して Language Understanding と名称が変わりましたが、ドキュメントやライブラリにも LUIS という表記が残っていたり、GA 後も LUIS と呼ばれることが多くあります。
 
-> Bot Framework Composer v1.0.2 では日本語対応した LUIS アプリケーションは作成されません。  
-> 必ず "en-us" になります。  
->
-> 以下では、今後の日本語対応を見越した手順を記載しています。
-
----
-
-## LUIS 利用の準備 (Settings ファイルの変更)
-
-Bot Framework Composer は、デフォルトの言語が "**en-us**" です。  
-すでに確認したように、このままでも日本語を問題なく利用できますが、LUIS を利用するにはまず言語の変更しておく必要があります。  
-手順を忘れることがないように最初に行っておきます。
-
-1. Bot Framework Composer で [**Settings**] - [**Bot Settings**] を選択します。
-
-2. [**luis**] セクションの [**defaultLanguage**] を "**ja-jp**" に変更します。  
-
-   > あとで動作確認した際に Help Intent に該当する入力を正しく処理できない場合は、"**en-us**" に戻してみてください。
-
-   <img src="./images/06/bfcomp_settings_luis.jpg" width="540px" />
-
-3. ここで一緒に [**luis**] -[**name**] を "**MyQnaBot**" に変更しておきます。（必須ではありません）
+> このハンズオンでは、ヘルプを呼び出す範囲でのみ Language Understanding を使用するので機能が実感しづらいですが、実装手順を理解することを目的とします。
 
 ---
 
 ## Recognizer Type の変更
 
-"MyQnaBot" の **Recognizer Type** (＝ユーザー意図の識別方法) は、[Bot Framework Composer の基礎 - 2](03_composer_basic2.md) では "Regular Expression" にしました。
+"MyQnaBot" の **Recognizer Type** (＝ユーザー意図の識別方法) は、[Bot Framework Composer の基礎 - 2](03_composer_basic2.md) では "Regular expression recognizer" にしました。
 
-ここで "**LUIS**" に変更して、もう少し自然な言語処理でユーザー意図を識別するように変更します。
+ここで Language Understanding に変更して、もう少し自然な言語処理でユーザー意図を識別するように変更します。
 
-1. [**Design Flow**] - [**MyQnaBot**] を選択して、Property の [**Recognizer Type**] を "**LUIS**" に変更します。
-
-   ![](./images/06/bfcomp_set_rectype.jpg)
-
-> LUIS は、このハンズオンで利用するよりもさらに高度な言語処理が可能です。  
-> このハンズオンでは LUIS 利用方法を理解するために手順に組み込みました。
+1. [**MyQnaBot**] ダイアログを選択して、Property の [**Recognizer Type**] を "**Default recognizer**" に変更します。
+   
+   <img src="./images/06/bfcomp_set_rectype.jpg" width="540px" />  
+   
+   > この変更により、[MyQnaBot] ダイアログにエラーが表示されるようになります。  
+   > これはまだ [Project Settings] で Language Understanding の設定を行っていないためです。  
+   > あとの手順でエラーを解消するので、ここではエラー表示が残ったままでかまいません。
+   >
+   > <img src="./images/06/bfcomp_recerror.jpg" width="360px" />
 
 ---
 
@@ -78,7 +58,7 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    - ボットの機能
    ```
 
-   ![](./images/06/bfcomp_help_trigger_phrases.jpg)
+   <img src="./images/06/bfcomp_help_trigger_phrases.jpg" width="540px" />
 
    "Trigger Phrases" では、類義語を登録したり、英語・日本語を組み合わせると認識精度が上がることがあります。  
    例えば  
@@ -90,50 +70,68 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    などです。  
    こうすると、"このボットの使い方" や "Botの機能を教えて" などの表現の揺らぎを吸収してくれます。
 
-   > Bot Framework Composer v1.0.1 では、上記の日本語対応ができていません。  
-   > このあとの操作では必ず "en-us" の LUIS アプリケーションが作成されます。
-   >
-   > Preview では "ja-jp" の LUIS アプリケーションを生成できていたため、今後修正されるものと考えて上記の手順を記載しています。
-
 3. [**Condition**] に以下の入力をします。
 
    ```txt
    #Help.Score > 0.8
    ```
 
-   ユーザーの入力が "Help" インテントである可能性が 80% より高い場合に Help ダイアログにコンテキストを切り替えることを意味します。  
+   Language Understanding での推論の結果、ユーザーの入力が "Help" インテントである可能性が 80% より高い場合に Help ダイアログにコンテキストを切り替えることを意味します。  
    それ以下の場合は、ユーザーの入力は "Unknown intent" で処理されるので、Qna ダイアログに切り替えられます。
 
    ![](./images/06/bfcomp_help_trigger_condition.jpg)
 
 ---
 
-## LUIS への接続と Bot の再起動
+## Language Understanding アプリケーションの作成
 
-Bot アプリケーションを LUIS に接続して Bot 再起動します。
+Language Understanding アプリケーションを作成して、接続に必要な情報を取得します。
 
 1. ブラウザーで [**LUIS**](https://www.luis.ai/) に接続してログイン（またはサインイン）します。
 
-2. [**User Settings**] - [**Settings**] を選択します。
+2. [**User Profile**] を選択して開きます。  
 
-   ![](./images/06/luis_user_settings_1.jpg)
-   ![](./images/06/luis_user_settings_2.jpg)
+3. "**Authoring Resource**" がすでに設定済みであり、このハンズオンでも同じリソースをそのまま使用してよい場合は、以下の Authoring Resource の選択・新規作成の手順は不要です。  
+   > 以下では新規の Authoring Resource を作成する手順です。  
+   > ハンズオンでは既存のリソースを使用せずに、新規にリソースを作成することをお勧めします。
 
-3. [**Starter_Key**] セクションの [**Primary Key**] をクリップボードにコピーします。  
-   この後すぐに使います。
+4. リソースを選択、または新規作成する場合は、[**Change authoring resouce**] を選択します。  
+   <img src="./images/06/luis_userprofile.jpg" width="400px" />
 
-   ![](./images/06/luis_user_settings_3.jpg)
+5. 既存の "Authoring Resource" を使用する場合は、適切な subscription および resouce をリストから選択して [Done] をクリックします。
+   Authoring Resource を新規作成する場合は [**Create a new authoring resource**] を選択します。  
+   <img src="./images/06/luis_chooseauthorresource.jpg" width="480px" />
 
-4. Bot Framework Composer に戻って、[**Start Bot**] または [**Restart Bot**] をクリックします。
+6. Authoring Resource を新規作成する場合は、[**Create new Azure Cognitive Services account**] で適切な選択・入力をして [Done] をクリックします。  
+   <img src="./images/06/luis_create_new_cogaccount.jpg" width="480px" />
 
-5. [**Publish LUIS models**] ダイアログが開いたら、[**LUIS Primary Key**] に LUIS ポータルでコピーした "Primary Key" を貼り付けて、[**OK**] をクリックします。
+7. 使用する Language Understanding が決まったら、[User Profile] で [**Manage authoring resources**] を選択します。  
+   <img src="./images/06/luis_userprofile_manageresource.jpg" width="400px" />
 
-   ![](./images/06/bfcomp_publish_luis_models.jpg)
+8. 使用する Azure subscripition およびリソースを指定して [**Primary key**] の値をクリップボードにコピーします。  
+   また [**Location**] を確認しておきます。  
+   <img src="./images/06/luis_copy_author_primarykey.jpg" width="480px" />
 
-6. [**Test in Emulator**] が表示されれば、LUIS への発行と Bot の再起動が完了しています。
+---
 
-   > "ja-jp" の LUIS アプリケーションを生成できるようになると、例えば「このボットの使い方」のような入力でも Help Intent で処理されるようになります。  
-   > Bot Framework Composer 1.0.1 では "en-us" の LUIS アプリケーションのみ生成されます。
+## Language Understanding への接続
+
+Bot アプリケーションを Language Understanding に接続して Bot を起動します。
+
+1. Bot Framework Composer に戻って、[**Project Settings**] - [MyQnaBot] を選択します。  
+   表示形式は [**Advanced Settings View**] を **オフ** にします。
+
+2. [**LUIS authoring key**] に Language Understanding の手順の最後でコピーした **Authoring key** を貼り付けます。  
+   また、そこで確認した **Location** を [**LUIS region**] で選択します。  
+   <img src="./images/06/bfcomp_projset_luis.jpg" width="540px" />
+
+3. Bot Framework Composer に戻って、[**Start Bot**] または [**Restart Bot**] をクリックします。
+
+
+5. [**Test in Emulator**] が表示されれば、Language Understanding への発行と Bot の再起動が完了しています。
+
+   > "ja-jp" の LUIS アプリケーションに接続すると、例えば「このボットの使い方」のような日本語入力でも Help Intent で処理されるようになります。  
+
 
 ---
 
@@ -144,9 +142,9 @@ Bot アプリケーションを LUIS に接続して Bot 再起動します。
    - ヘルプ
    - サポートされる言語は何
 
-   など、LUIS または QnA Maker で処理されます。
+   などを入力します。
 
-   ![](./images/06/bfemu_test_qna_and_luis.jpg)
+   <img src="./images/06/bfemu_test_qna_and_luis.jpg" width="540px" />
 
 2. "ヘルプ" などと入力した際には LUIS で入力の意図を類推していることを確認します。
  

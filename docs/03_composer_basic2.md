@@ -22,24 +22,18 @@
 
 Bot Framework Composer は、
 
-- Composer の UI の言語
 - Bot が対象とする言語
+- Composer の UI の言語
 
 を変更可能です。
 
-Composer の UI 言語を変更するには、[Composer Settings] - [Application Settings] で先頭の [Composer UI] を変更します。
-
-<img src="./images/03/bfcomp_compsetting_uilang.jpg" width="480px" />
-
-> このハンズオン資料では、Composer UI は英語のままで進めます。
-
-プロジェクトの Bot が対象とする言語は、以下の操作で変更します。
+プロジェクトの **Bot が対象とする言語** は、以下の操作で変更します。
 
 1. [**Project Settings**] で [**Bot language**] セクションまで進む
 2. [**Manage bot languages**] を選択  
    
    <img src="./images/03/bfcomp_projset_managelang.jpg" width="480px" />
-3. [To which language ～] で "Japanese (Japan)" を選択して、さらに [When done, switch to the newly language ～] を選択する。  
+3. [**To which language ～**] で "**Japanese (Japan)**" を選択して、さらに [**When done, switch to the newly language ～**] を選択する。  
 最後に [Done] で言語を確定  
    <img src="./images/03/bfcomp_managelang_jajp.jpg" width="480px" />
 
@@ -47,6 +41,14 @@ Composer の UI 言語を変更するには、[Composer Settings] - [Application
    [**Set it as default language**] を選択します。これで Bot アプリケーションのデフォルト言語が日本語になります。  
    
    <img src="./images/03/bfcomp_default_lang_jajp.jpg" width="480px" />
+
+<br />
+
+**Composer の UI 言語** を変更するには、[Composer Settings] - [Application Settings] で先頭の [Composer UI] を変更します。
+
+<img src="./images/03/bfcomp_compsetting_uilang.jpg" width="480px" />
+
+> このハンズオン資料では、Composer UI は英語のままで進めます。
 
 ---
 
