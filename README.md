@@ -8,13 +8,16 @@
 4. [QnA Maker でナレッジベース作成](./docs/04_create_qnamaker_knowledgebase.md)  
 5. [Bot アプリケーションに Q&A 機能を実装](./docs/05_composer_qna.md)  
 6. [LUIS でユーザーの意図を予測](./docs/06_composer_luis.md)  
-7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)
+<!-- 7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md) -->
 
 > このハンズオンでは [**Bot Framework Composer 1.3.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
 
----
 
-<!-- TODO: 画像差し替え -->
+> Bot Framework Composer v.1.3.0 以降では、マイクロソフトアカウントで Azure に発行する操作はエラーとなるようです。  
+> 現在は 1章～6章の手順のみ公開しています。  
+> 今後のバージョンアップで改善されたところで、7章として Azure への発行の操作を追加します。  
+
+---
 
 ![](./docs/images/bfcomp_main.jpg)
 
