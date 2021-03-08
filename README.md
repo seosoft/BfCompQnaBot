@@ -25,7 +25,7 @@ Bot Framework Composer は、Bot アプリケーションを GUI で開発でき
 
 - GUI の操作で Bot Framework ベースの C# のコードを自動生成
 - ダイアログ（一連の対話）の作成や管理が簡単
-- [LUIS](https://luis.ai/) との統合
+- [Language Understanding](https://luis.ai/) (LUIS) との統合
 - [QnA Maker](https://qnamaker.ai/) と簡単に連携
 - 外部サービスの利用で機能拡張が可能
 
