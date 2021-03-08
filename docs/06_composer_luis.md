@@ -80,10 +80,10 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    #Help.Score > 0.8
    ```
 
-   Language Understanding での推論の結果、ユーザーの入力が "Help" インテントである可能性が 80% より高い場合に Help ダイアログにコンテキストを切り替えることを意味します。  
-   それ以下の場合は、ユーザーの入力は "Unknown intent" で処理されるので、Qna ダイアログに切り替えられます。
-
    <img src="./images/06/bfcomp_set_help_condition.jpg" width="400px" />
+
+   > Language Understanding での推論の結果、ユーザーの入力が "Help" インテントである可能性が 80% より高い場合に Help ダイアログにコンテキストを切り替えることを意味します。  
+   > それ以下の場合は、ユーザーの入力は "Unknown intent" で処理されるので、Qna ダイアログに切り替えられます。
 
 ---
 
