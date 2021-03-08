@@ -27,7 +27,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
 2. Home 画面で [**New**] をクリックします。  
 
-   <img src="./images/02/bfcomp_new_project.jpg" width="400px" />
+   <img src="./images/02/bfcomp_new_project.jpg" width="480px" />
 
 3. 今回は [**Create from Scratch**] を選択します。
 
@@ -67,14 +67,14 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    > 今のところユーザーからの入力を受け付けるものは Unknown intent だけです。  
 
 3. 画面中央の "**Authoring canvas**" に Unknown intent が表示されたら、[**+**] をクリックします。  
-   続いて [**Send a message**] を選択します。
+   続いて [**Send a response**] を選択します。
 
    ユーザーの入力に対して「メッセージを返す」アクションを追加しました。
 
-   ![](./images/02/bfcomp_send_a_mes_unknown_intent.jpg)
+   <img src="./images/02/bfcomp_send_a_mes_unknown_intent.jpg" width="540px" />
 
 
-4. [**Send a message**] アクションをクリックします。  
+4. [**Send a response**] アクションをクリックします。  
    続いて、画面右側の Property の [**Language Generation**] に以下を入力します。
 
    ```txt
@@ -83,7 +83,7 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    先頭のハイフンおよび半角スペースは必須です。  
 
-   ![](./images/02/bfcomp_message_lg.jpg)
+   <img src="./images/02/bfcomp_message_lg.jpg" width="540px" />
 
    "**${turn.activity.text}**" はユーザーが入力した内容です。  
    これでオウム返しするようになりました。確認してみます。
@@ -99,25 +99,26 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    Bot が起動すると [**Test in emulator**] と表示されます。初めての [Start Bot] の操作では起動までに少し時間がかかります。
 
    <img src="./images/02/bfcomp_startbot.jpg" width="540px" />
-   <br />
-   <img src="./images/02/bfcomp_reloading.jpg" width="540px" />
-
-   > ファイアウォールの設定画面が表示された場合は、適切な設定をします。  
-   >
-   > <img src="./images/02/win_set_firewalls.jpg" width="400px" />
 
 2. [**Test in Emulator**] をクリックします。  
    Bot Framework Emulator が自動的に起動します。
 
    <img src="./images/02/bfcomp_test_in_emulator.jpg" width="540px" />
 
-3. Bot Framewoek Emulator が起動したら何か入力します。  
+   > Bot Framework Emulator 起動時にファイアウォールの設定画面が表示された場合は、適切な設定をします。  
+   >
+   > <img src="./images/02/win_set_firewalls.jpg" width="400px" />
+
+3. Bot Framework Emulator の初回起動時に、Bot で使用する言語のロケールを  
+   ![](images/02/bfemu_set_locale.jpg)
+
+4. Bot Framework Emulator が起動したら何か入力します。  
    入力した内容で Bot が応答することを確認します。
 
    > Emulator が起動する（対話を始める）と、Bot が自動的に "Welcome to the EmptyBot sample" と応答してきます。  
    > これについては次のステップで説明、対応します。
 
-   ![](./images/02/bfemu_say_something.jpg)
+   <img src="./images/02/bfemu_say_something.jpg" width="540px" />
 
 Bot は期待通りに動作しました。
 

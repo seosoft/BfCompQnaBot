@@ -2,7 +2,7 @@
 
 ハンズオンの最初に [**Bot Framework Composer**](https://docs.microsoft.com/ja-jp/composer/) で Bot 開発のための環境を構築します。
 
-このハンズオンでは、2020年5月に GA、7月前半にリビジョンアップした [**Bot Framework Composer 1.0.2**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用します。  
+このハンズオンでは、[**Bot Framework Composer v1.3.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用します。  
 ハンズオン実施の時期によっては画面の構成などが一部異なる可能性があります。
 
 > 参考として [ソースコードからビルドする方法](#%e5%8f%82%e8%80%83-%e3%82%bd%e3%83%bc%e3%82%b9%e3%82%b3%e3%83%bc%e3%83%89%e3%81%8b%e3%82%89%e3%83%93%e3%83%ab%e3%83%89%e3%81%99%e3%82%8b%e6%96%b9%e6%b3%95) も紹介します。  
@@ -35,7 +35,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
 3. **Bot Framework Composer インストール**  
    使用している OS にあわせて、**Bot Framework Composer** のインストーラーをダウンロードしてインストールします。
 
-   > 以下のリンクは公式サイトに掲載されているものですが、時期によっては少し古いバージョンのインストーラーを指すことがあるようです。  
+   > 以下のリンクは公式サイトに掲載されているものですが、時期によっては少し古いバージョンのインストーラーを指しているかもしれません。  
    > インストール後に最新版であることを確認して、必要に応じてアップデートしてください。（このあとの手順に記載します）
 
    |OS|インストーラーのアドレス|
@@ -51,7 +51,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
 4. **Bot Framework Composer 起動確認**  
    確認のために Bot Framework Composer を起動します。
 
-   ![](./images/01/bfcomp_start.jpg)
+   <img src="./images/01/bfcomp_start.jpg" width="540px" />
 
    起動時に "**New update available**" というダイアログが表示されるかもしれません。  
    その場合は次の手順で最新版にアップデートします。
@@ -63,7 +63,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
 
    アップデートダイアログが表示されない場合でも、Bot Framework Composer インストール直後の **初回起動時** は [**Help**] - [**Check for Updates**] でアップデートの確認をします。
 
-   <img src="./images/01/bfcomp_help_check_updates.jpg" width="400px" />
+   <img src="./images/01/bfcomp_help_check_updates.jpg" width="480px" />
 
 6. **ngrok インストール**  
    [**ngrok**](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
@@ -73,7 +73,6 @@ Windows 版、macOS 版、Linux 版が用意されています。
    [ステップ 7](07_deploy_to_azure.md) で Bot アプリケーションを Azure に発行したあとの動作確認に使用します。
 
    > Bot Framework Composer で開発する場合、以下のケースで ngrok が必要になります。
-   >
    > - Azure に発行した Bot アプリケーションを Bot Framework Emulator でテストしたい場合
    > - OAuth で認証したい場合
    > - ローカルで実行している Bot アプリケーションに他のマシンから接続したい場合
@@ -92,7 +91,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
 
 ## (参考) ソースコードからビルドする方法
 
-GA したことで、Bot Framework Composer はデスクトップアプリケーション版のインストーラーが整備されました。  
+Bot Framework Composer はデスクトップアプリケーション版のインストーラーが整備されています。  
 このハンズオンの実施、および一般的な利用にはデスクトップアプリケーション版の利用をお勧めします。
 
 最新の機能を利用したい、デスクトップアプリケーション版の不具合が問題になるような場合には、ソースコードからのビルドを検討してください。
@@ -133,15 +132,13 @@ GA したことで、Bot Framework Composer はデスクトップアプリケー
    cd BotFramework-Composer\Compose
    ```
 
-   5-5. ビルドに必要なパッケージを取得します。  
-   数分程度の時間がかかるので完了するまで待ちます。
+   5-5. ビルドに必要なパッケージを取得します。時間がかかるので完了するまで待ちます。
 
    ```cmd
    yarn
    ```
 
-   5-6. Bot Framework Composer アプリケーションをビルドします。  
-   数分程度の時間がかかるので完了するまで待ちます。
+   5-6. Bot Framework Composer アプリケーションをビルドします。 時間がかかるので完了するまで待ちます。
 
    ```cmd
    yarn build
