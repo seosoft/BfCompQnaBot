@@ -150,17 +150,20 @@ Bot アプリケーションを Language Understanding に接続して Bot を�
 
    <img src="./images/06/bfemu_test_qna_and_luis.jpg" width="540px" />
 
-2. "ヘルプ" などと入力した際には LUIS で入力の意図を類推していることを確認します。
+2. "ヘルプ" などと入力した際には Language Understanding で入力の意図を類推していることを確認します。
  
    Bot Framework Emulator での見た目は正規表現を使っていた時と同じに見えるかもしれません。  
-   Emulator の右下のトレースを見ると、今回は確かに "LUIS" への問い合わせが実行されていることがわかります。
+   Emulator の右下のトレースを見ると、今回は確かに "Language Understanding" への問い合わせが実行されていることがわかります。
 
 ---
 
 以上で LUIS と QnA Maker とを組み合わせて利用できるようになりました。  
 Q&A Bot アプリケーションを開発は完了です。
 
-次のステップでは、作成したアプリケーションをクラウドに発行します。
+~~次のステップでは、作成したアプリケーションを Azure に発行します。~~
 
-[前に戻る](05_composer_qna.md) | [次に進む](07_deploy_bot.md)  
+> Bot Framework Composer v.1.3.0 以降では、マイクロソフトアカウントで Azure に発行する操作はエラーとなるようです。  
+> 今後のバージョンアップで改善されたところで、次のステップを改訂します。
+
+[前に戻る](05_composer_qna.md) | 次に進む  
 [目次に戻る](../README.md)
