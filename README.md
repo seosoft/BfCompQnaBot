@@ -19,8 +19,6 @@
 
 ---
 
-<!-- TODO: 画像差し替え -->
-
 ![](./docs/images/bfcomp_main.jpg)
 
 Bot Framework Composer は、Bot アプリケーションを GUI で開発できるツールです。
