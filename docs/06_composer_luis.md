@@ -68,9 +68,13 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    - "Bot" と "ボット"  
 
    などです。  
-   こうすると、"このボットの使い方" や "Botの機能を教えて" などの表現の揺らぎを吸収してくれます。
+   こうすると、"このボットの使い方" や "Botの機能を教えて" などの日本語の表現の揺らぎを吸収してくれます。
 
-3. [**Condition**] に以下の入力をします。
+3. [**Condition**] のドロップダウンを開いて "**Write an expression**" を選択します。  
+   <img src="./images/06/bfcomp_change_help_condition.jpg" width="540px" />
+
+4. [**Condition**] に以下の入力をします。  
+   前の操作で [Condition] には "=" が設定されている場合は、**"=" を削除してから** 以下の入力をします。
 
    ```txt
    #Help.Score > 0.8
@@ -79,7 +83,7 @@ help ダイアログにコンテキストを切り替える契機となるフレ
    Language Understanding での推論の結果、ユーザーの入力が "Help" インテントである可能性が 80% より高い場合に Help ダイアログにコンテキストを切り替えることを意味します。  
    それ以下の場合は、ユーザーの入力は "Unknown intent" で処理されるので、Qna ダイアログに切り替えられます。
 
-   ![](./images/06/bfcomp_help_trigger_condition.jpg)
+   <img src="./images/06/bfcomp_set_help_condition.jpg" width="400px" />
 
 ---
 
