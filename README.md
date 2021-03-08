@@ -7,7 +7,7 @@
 3. [Bot Framework Composer の基礎 - 2 (機能追加)](./docs/03_composer_basic2.md)  
 4. [QnA Maker でナレッジベース作成](./docs/04_create_qnamaker_knowledgebase.md)  
 5. [Bot アプリケーションに Q&A 機能を実装](./docs/05_composer_qna.md)  
-6. [LUIS でユーザーの意図を予測](./docs/06_composer_luis.md)  
+6. [Language Understanding でユーザーの意図を予測](./docs/06_composer_luis.md)  
 <!-- 7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md) -->
 
 > このハンズオンでは [**Bot Framework Composer 1.3.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。

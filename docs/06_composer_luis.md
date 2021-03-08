@@ -1,4 +1,4 @@
-# LUIS でユーザーの意図を予測
+# Language Understanding でユーザーの意図を予測
 
 [前のステップ](05_composer_qna.md) で、QnA Maker を使った Q&A 機能を Bot アプリケーションに 追加しました。
 
@@ -134,7 +134,7 @@ Bot アプリケーションを Language Understanding に接続して Bot を�
 
 5. [**Test in Emulator**] が表示されれば、Language Understanding への発行と Bot の再起動が完了しています。
 
-   > "ja-jp" の LUIS アプリケーションに接続すると、例えば「このボットの使い方」のような日本語入力でも Help Intent で処理されるようになります。  
+   > "ja-jp" の Language Understanding アプリケーションに接続すると、例えば「このボットの使い方」のような日本語入力でも Help Intent で処理されるようになります。  
 
 
 ---
@@ -157,7 +157,7 @@ Bot アプリケーションを Language Understanding に接続して Bot を�
 
 ---
 
-以上で LUIS と QnA Maker とを組み合わせて利用できるようになりました。  
+以上で Language Understanding と QnA Maker とを組み合わせて利用できるようになりました。  
 Q&A Bot アプリケーションを開発は完了です。
 
 ~~次のステップでは、作成したアプリケーションを Azure に発行します。~~
