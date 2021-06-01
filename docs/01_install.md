@@ -32,7 +32,21 @@ Windows 版、macOS 版、Linux 版が用意されています。
    <br />
    <img src="./images/01/dncore_install_02.jpg" width="400px" />
 
-3. **Bot Framework Composer インストール**  
+3. **Node.js インストール**  
+   [**Node.js**](https://nodejs.org/ja/download/) をダウンロードしてインストールします。  
+
+   このハンズオンの範囲では Node.js のインストールは必須ではありませんが、Bot Framework Composer は Node.js のコードを生成するプロジェクト テンプレートが用意されています。  
+   このタイミングでインストールすることをお勧めします。
+
+   > Windows を使用している場合、Node.js のインストーラーの途中で Chocolatey もインストールするかを確認されます。  
+   > Bot Framework Composer での開発には Chocolatey は不要なので、任意で追加インストールしてください。
+
+   > Node.js をインストールしていない環境で Bot Framework Composer で新規プロジェクトを作成すると、Node.js のインストールを促すポップアップが表示されます。  
+   キャンセルすれば C# のテンプレートを利用して Bot 開発を進めることができますが、毎回メッセージが表示されるのが気になる場合や Node.js 用のテンプレートを利用したい場合は、Node.js のインストールをしてください。  
+   >  
+   > <img src="./images/01/bfcomp_nodejs_request.jpg" width="400px" />
+
+4. **Bot Framework Composer インストール**  
    使用している OS にあわせて、**Bot Framework Composer** のインストーラーをダウンロードしてインストールします。
 
    |OS|インストーラーのアドレス|
@@ -45,12 +59,12 @@ Windows 版、macOS 版、Linux 版が用意されています。
    <br />
    <img src="./images/01/bfcomp_install_02.jpg" width="480px" />
 
-4. **Bot Framework Composer 起動確認**  
+5. **Bot Framework Composer 起動確認**  
    確認のために Bot Framework Composer を起動します。
 
    <img src="./images/01/bfcomp_start.jpg" width="540px" />
 
-5. **ngrok インストール**  
+6. **ngrok インストール**  
    [**ngrok**](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
    インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
 
