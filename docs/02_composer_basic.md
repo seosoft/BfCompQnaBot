@@ -115,7 +115,7 @@ EmptyBot テンプレートではトリガーとして "Greeting" と "Unknown i
 3. [**Responses**] に以下を入力します。
 
    ```txt
-   - 「」と言いましたね
+   「」と言いましたね
    ```
 
    <img src="./images/02/bfcomp_echomessage_literal.jpg" width="540px" />
