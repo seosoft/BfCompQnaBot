@@ -149,7 +149,12 @@ EmptyBot テンプレートではトリガーとして "Greeting" と "Unknown i
 
    <img src="./images/02/bfcomp_startbot.jpg" width="540px" />
 
-2. ローカル Bot が起動したら、[**Open Web Chat**] をクリックします。  
+2. [**Local bot runtime manager**] ([Start bot] の右にあるアイコン) で ローカル Bot の状態を確認します。[Status] が "Running" になれば動作しています。
+
+   <img src="./images/02/bfcomp_localbot_rtman.jpg" width="540px" />
+
+3. ローカル Bot が起動したら　Web Chat を開きます。  
+   [**Web Chat**] アイコンをクリックするか、[Local bot runtime manager] の [**Open Web Chat**] をクリックします。  
 
    <img src="./images/02/bfcomp_open_webchat.jpg" width="540px" />
 
@@ -157,7 +162,7 @@ EmptyBot テンプレートではトリガーとして "Greeting" と "Unknown i
    >
    > <img src="./images/02/win_set_firewalls.jpg" width="400px" />
 
-3. Web Chat が開いたら何か入力します。  
+4. Web Chat が開いたら何か入力します。  
    入力した内容で Bot が応答することを確認します。
 
    > Web Chat を開くと、最初に Bot が自動的に "ようこそ、QnA Botへ" と応答してきます。  
