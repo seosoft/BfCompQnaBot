@@ -77,9 +77,9 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
    <img src="./images/03/bfcomp_help_send_mes.jpg" width="540px" />
 
-   [Bot Response] にテキスト領域が表示されていない場合は、[**Add alternative**] をクリックしてテキスト領域を開きます。
-
-   <img src="./images/03/bfcomp_sendres_add_alternative.jpg" width="480px" />
+   > [Bot Response] にテキスト領域が表示されていない場合は、[**Add alternative**] をクリックしてテキスト領域を開きます。
+   >
+   > <img src="./images/03/bfcomp_sendres_add_alternative.jpg" width="480px" />
 
 ---
 
