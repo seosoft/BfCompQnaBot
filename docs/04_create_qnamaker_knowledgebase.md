@@ -52,7 +52,7 @@ QnA Maker のリソースを Azure ポータルで作成します。
    <img src="./images/04/azure_create_qna.jpg" width="560px" />
 
    > Bot Framework Composer では QnA Maker のデフォルトリージョンは "米国西部" になっています。  
-   > [Project Settings] で変更することは可能ですが、今回は "米国西部" のままで進めます。
+   > [Project Configure] で変更することは可能ですが、今回は "米国西部" のままで進めます。
 
 5. 作成したリソースグループを開いて "**App Service プラン**" を選択します。
 
@@ -61,7 +61,9 @@ QnA Maker のリソースを Azure ポータルで作成します。
 6. App Service プランが表示されたら [**スケールアップ**] を選択します。  
    続いて [**開発/テスト**] - [**F1**] を選択して最後に [**適用**] をクリックします。
 
-   <img src="./images/04/azure_appsrv_plan_to_f1.jpg" width="540px" />
+   <img src="./images/04/azure_appsrv_plan_to_f1.jpg" width="540
+
+   > Azure の利用状況によっては "F1" に変更できないことがあります。
 
 以上で、Azure ポータルでの手順は終了です。  
 続いて QnA Maker に戻ってナレッジベースを作成します。
@@ -75,7 +77,7 @@ Azure で作成した QnA Maker のリソースに、QnA Maker で接続して�
 1. QnA Maker のタブに戻ります。
 
 2. "STEP 2" の [**Refresh**] をクリックします。  
-   すぐ前の手順で作ったばかりの QnA Maker のリソースを選択します。  
+   すぐ前の手順で作った QnA Maker のリソースを選択します。  
    [**Language**] は "**Japanese**" を選択します。
 
    <img src="./images/04/qna_select_resource.jpg" width="540px" />
@@ -97,10 +99,10 @@ Azure で作成した QnA Maker のリソースに、QnA Maker で接続して�
 
    <img src="./images/04/qna_kb_created.jpg" width="540px" />
 
-一般にはここで、正しく質問と回答とが取り込めているかを確認します。  
-今回は正しく取り込めることが分かっているサイトなので特に何もしません。
-
-必要に応じて、内容を確認したり、質問・回答の文言を修正したりします。
+> 一般にはここで、正しく質問と回答とが取り込めているかを確認します。  
+> 今回は正しく取り込めることが分かっているサイトなので特に何もしません。
+>
+> 必要に応じて、内容を確認したり、質問・回答の文言を修正したりします。
 
 ---
 
