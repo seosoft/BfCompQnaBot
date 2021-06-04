@@ -14,11 +14,16 @@
 >
 > <img src="./images/04/azure_support_page.jpg" width="400px" />
 
+QnA Maker のナレッジベースは、Bot Framework Composer の [**Configure**] で新規作成することもできます。  
+今回は Bot Framework Composer での操作の前に、事前に QnA Maker ポータルでナレッジベースを作成する方法で進めます。
+
 ---
 
 ## QnA Maker リソースの作成
 
 QnA Maker のリソースを Azure ポータルで作成します。
+
+> 
 
 1. [**QnA Maker**](https://www.qnamaker.ai/) にサインインします。
 
