@@ -35,7 +35,7 @@ Windows 版、macOS 版、Linux 版が用意されています。
 3. **Node.js インストール**  
    [**Node.js**](https://nodejs.org/ja/download/) をダウンロードしてインストールします。  
 
-   このハンズオンの範囲では Node.js のインストールは必須ではありませんが、Bot Framework Composer は Node.js のコードを生成するプロジェクト テンプレートが用意されています。  
+   このハンズオンの Bot 開発の範囲では Node.js のインストールは必須ではありませんが、Bot Framework Composer は Node.js のコードを生成するプロジェクト テンプレートが用意されています。  
    このタイミングでインストールすることをお勧めします。
 
    > Windows を使用している場合、Node.js のインストーラーの途中で Chocolatey もインストールするかを確認されます。  
