@@ -8,26 +8,22 @@
 4. [QnA Maker でナレッジベース作成](./docs/04_create_qnamaker_knowledgebase.md)  
 5. [Bot アプリケーションに Q&A 機能を実装](./docs/05_composer_qna.md)  
 6. [Language Understanding でユーザーの意図を予測](./docs/06_composer_luis.md)  
-<!-- 7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md) -->
+7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)
 
-> このハンズオンでは [**Bot Framework Composer 1.3.1**](https://techcommunity.microsoft.com/t5/azure-ai/build-2020-conversational-ai-updates/ba-p/1397685) を使用しています。
-
-
-> Bot Framework Composer v.1.3.0 以降では、マイクロソフトアカウントで Azure に発行する操作はエラーとなるようです。  
-> 現在は 1章～6章の手順のみ公開しています。  
-> 今後のバージョンアップで改善されたところで、7章として Azure への発行の操作を追加します。  
+> このハンズオンでは [**Bot Framework Composer v2.0.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2021-conversational-ai-update/ba-p/2375203) を使用しています。 
 
 ---
 
-![](./docs/images/bfcomp_main.jpg)
+<img src="./docs/images/bfcomp_main.jpg" width="540px" />
 
 Bot Framework Composer は、Bot アプリケーションを GUI で開発できるツールです。
 
-- GUI の操作で Bot Framework ベースの C# のコードを自動生成
+- GUI の操作で開発
 - ダイアログ（一連の対話）の作成や管理が簡単
 - [Language Understanding](https://luis.ai/) (LUIS) との統合
 - [QnA Maker](https://qnamaker.ai/) と簡単に連携
 - 外部サービスの利用で機能拡張が可能
+- Power Virtual Agents との連携
 
 Bot Framework Composer の公式ドキュメントは [**こちら**](https://docs.microsoft.com/ja-jp/composer/) です。
 
