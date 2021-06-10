@@ -143,7 +143,7 @@ EmptyBot テンプレートではトリガーとして "Greeting" と "Unknown i
 
 ## Web Chat で実行
 
-**Bot Framework Emulator** を起動して Bot の動作を確認します。
+Bot Framework Composer 組み込みの **Web Chat** で Bot の動作を確認します。
 
 1. [**Start Bot**] をクリックします。 ローカルの Bot の起動が始まります。
 
