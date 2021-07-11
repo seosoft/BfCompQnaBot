@@ -151,7 +151,7 @@ Web Chat で動作を見てみます。
 ---
 
 以上で、Bot アプリケーションの重要な機能拡張の手順を理解できたと思います。  
-次のステップから Q&A Bot を作っていきます。まずは QnA Maker でナレッジベースを作るところからです。
+次のステップでは Q&A Bot を作っていきます。まずは Composer 組み込みの機能でナレッジベースを作るところからです。
 
-[前に戻る](02_composer_basic.md) | [次に進む](04_create_qnamaker_knowledgebase.md)  
+[前に戻る](02_composer_basic.md) | [次に進む](04_create_knowledgebase.md)  
 [目次に戻る](../README.md)

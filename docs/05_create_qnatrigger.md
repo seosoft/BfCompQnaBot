@@ -1,6 +1,6 @@
 # Bot アプリケーションに Q&A 機能を実装
 
-[前のステップ](04_create_qnamaker_knowledgebase.md) で、ナレッジベースを作成、学習して Web サービスとして公開しました。
+[前のステップ](04_create_knowledgebase.md) で、Composer 組み込みの機能でナレッジベースを作成しました。
 
 このステップでは、Bot アプリケーションに Q&A 機能を実装します。  
 
@@ -110,5 +110,5 @@ Web Chat を使って動作確認します。
 [Bot Framework Composer の基礎 - 2](03_composer_basic2.md) では、正規表現でユーザーの意図を認識しました。  
 次のステップでは Bot アプリケーションで **Language Understanding** (LUIS) を利用して、ユーザーの意図を予測します。  
 
-[前に戻る](04_create_qnamaker_knowledgebase.md) | [次に進む](06_composer_luis.md)  
+[前に戻る](04_create_knowledgebase.md) | [次に進む](06_composer_luis.md)  
 [目次に戻る](../README.md)
