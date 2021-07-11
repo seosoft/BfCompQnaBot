@@ -5,9 +5,9 @@
 1. [開発環境の構築](./docs/01_install.md)
 2. [Bot Framework Composer の基礎 - 1 (Echo Bot)](./docs/02_composer_basic.md)
 3. [Bot Framework Composer の基礎 - 2 (機能追加)](./docs/03_composer_basic2.md)  
-4. [ナレッジベース作成](./docs/04_create_knowledgebase.md)  
-5. [Bot アプリケーションに Q&A 機能を実装](./docs/05_create_qnatrigger.md)  
-6. [Language Understanding でユーザーの意図を予測](./docs/06_composer_luis.md)  
+4. [Language Understanding でユーザーの意図を予測](./docs/04_composer_luis.md)　　
+5. [ナレッジベース作成](./docs/05_create_knowledgebase.md)  
+6. [Q&A 機能の呼び出しとサジェスチョンの実装](./docs/06_test_qnatrigger.md)  
 7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)  
   
 8. [付録 A) QnA Maker でナレッジベース作成](./docs/ap01_create_qnamaker_kb.md)

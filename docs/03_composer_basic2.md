@@ -1,6 +1,6 @@
 # Bot Framework Composer の基礎 - 2 (機能追加)
 
-[前のステップ](02_composer_basic.md) では、Bot アプリケーションの最も基本的なものとして、オウム返し Bot を作成しました。
+[前のステップ](./02_composer_basic.md) では、Bot アプリケーションの最も基本的なものとして、オウム返し Bot を作成しました。
 
 続いて、この Bot アプリケーションにヘルプメッセージを返す機能を追加してみます。
 
@@ -15,7 +15,7 @@
 
 ## あいさつメッセージの追加
 
-[前のステップ](02_composer_basic.md) で Greeting トリガー（ユーザーが対話を開始した時に呼び出される）の応答メッセージを定義しました。  
+[前のステップ](./02_composer_basic.md) で Greeting トリガー（ユーザーが対話を開始した時に呼び出される）の応答メッセージを定義しました。  
 応答メッセージは常に固定である必要はなく、複数個をランダムに応答させることができます。
 
 挨拶メッセージをひとつ追加して、ランダムで応答するようにします。
@@ -24,20 +24,24 @@
    
    <img src="./images/03/bfcomp_add_message.jpg" width="480px" />
 
+<br />
+
 2. 新しいテキスト領域に以下を入力して Enter で確定します。  
 
    ```txt
    こんにちは、QnA Botです
    ```  
    
-   <img src="./images/03/bfcomp_input_newmessage.jpg" width="400px" />
+   <img src="./images/03/bfcomp_input_newmessage.jpg" width="280px" />
+
+<br />
 
 3. 異なるあいさつメッセージが帰ってくることを Web Chat で確認します。  
    [**Start Bot**] または [**Restart Bot**] をクリックして、Bot を起動します。  
    [**Restart Conversation - new user ID**] を何度かクリックして、ランダムで挨拶メッセージが変わることを確認します。
 
-   <img src="./images/03/bfcomp_greeting_mes1.jpg" width="360px" />
-   <img src="./images/03/bfcomp_greeting_mes2.jpg" width="360px" />
+   <img src="./images/03/bfcomp_greeting_mes1.jpg" width="280px" />
+   <img src="./images/03/bfcomp_greeting_mes2.jpg" width="280px" />
 
 ---
 
@@ -52,20 +56,28 @@ Bot にヘルプメッセージを応答する機能を追加します。
 >
 > またハンズオンで扱っている Bot は簡単な機能なのでヘルプは不要なはずです。今回はダイアログの定義と呼び出し方とを理解するために、ダイアログを使ってヘルプメッセージを応答します。
 
+<br />
+
 1. 一番上の [**MyQnaBot**] の [**...**] をクリックして [**Add a dialog**] を選択します。  
 
    <img src="./images/03/bfcomp_add_new_dialog.jpg" width="540px" />
 
    > 一番上の MyQnABot は **プロジェクト**、2行目の MyQnABot は **ダイアログ** と言います。
 
+<br />
+
 2. [**Name**] にダイアログの名前を入力します。  
    今回は "**Help**" とします。
 
    <img src="./images/03/bfcomp_help_dialog_name.jpg" width="540px" />
 
+<br />
+
 3. [**Help**] - [**BeginDialog**] で [**+**] をクリックして、続いて [**Send a response**] をクリックします。
 
    <img src="./images/03/bfcomp_help_add_send_res.jpg" width="540px" />
+
+<br />
 
 4. [**Send a response**] をクリックして [**Bot Response**] に以下を入力します。
 
@@ -76,10 +88,6 @@ Bot にヘルプメッセージを応答する機能を追加します。
    ```
 
    <img src="./images/03/bfcomp_help_send_mes.jpg" width="540px" />
-
-   > [Bot Response] にテキスト領域が表示されていない場合は、[**Add alternative**] をクリックしてテキスト領域を開きます。
-   >
-   > <img src="./images/03/bfcomp_sendres_add_alternative.jpg" width="480px" />
 
 ---
 
@@ -92,13 +100,19 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
    <img src="./images/03/bfcomp_set_rectype.jpg" width="540px" />
 
+   <br />
+
    > 今までは Intent（＝意図、ユーザーが Bot に何をさせようとしているのか）を分類するルールを持っていませんでした。  
    > この手順で正規表現でユーザー入力の意図を分類するようになります。
+
+<br />
 
 2. ヘルプダイアログを呼び出すための Trigger を "**MyQnaBot**" に追加します。  
    "MyQnaBot" ダイアログで [**Add new trigger**] を選択します。
 
    <img src="./images/03/bfcomp_add_help_trigger.jpg" width="480px" />
+
+<br />
 
 3. [**Create a trigger**] ダイアログが開いたら、以下を入力・選択をします。
 
@@ -110,9 +124,13 @@ Bot にヘルプメッセージを応答する機能を追加します。
 
    <img src="./images/03/bfcomp_create_help_trigger.jpg" width="540px" />
 
+<br />
+
 4. [**+**] をクリックして、続いて [**Dialog Management**] - [**Begin a new dialog**] をクリックします。
 
    <img src="./images/03/bfcomp_add_help_begin_dialog.jpg" width="540px" />
+
+<br />
 
 5. [**Begin a new dialog**] アクションの Property の [**Dialog name**] で "**Help**" を選択します。
 
@@ -141,17 +159,25 @@ Web Chat で動作を見てみます。
    |使い方|Azure についての質問に答えます|
    |任意の入力|「(入力した内容)」と言いましたね|
 
+   <br />
+
    <img src="./images/03/webchat_test_help.jpg" width="540px" />
 
-   > Intent の分類が比較的簡単なルールの場合には、[**Recognizer Type**] を "**Regular Expression**" にすることができます。  
-   >
-   > ユーザーにもっと自由な入力を認める場合は **LUIS (Language Understanding)** で分類する必要があります。（例えば「ボットの機能について教えて」など）  
-   > LUIS についてはあとのステップで取り上げます。
+<br />
+
+ヘルプのように Intent の分類が比較的簡単なルールの場合には、[**Recognizer Type**] を "**Regular Expression**" にすることができます。  
+
+ユーザーにもっと自由な入力を認める場合は **Default recognizer** で分類する必要があります。 
+Default recognizer を選択すると、Composer は自然言語処理のエンジンとして Language Understanding (= LUIS) を利用します。
+
+この後のステップで取り上げる方法で [QnA Maker と連携する](./05_create_knowledgebase.md) 場合にも Recognizer Type を Default recognizer に変更して Language Understanding を利用する必要があります。
+
+Language Understanding については次のステップで取り上げます。
 
 ---
 
 以上で、Bot アプリケーションの重要な機能拡張の手順を理解できたと思います。  
 次のステップでは Q&A Bot を作っていきます。まずは Composer 組み込みの機能でナレッジベースを作るところからです。
 
-[前に戻る](02_composer_basic.md) | [次に進む](04_create_knowledgebase.md)  
+[前に戻る](./02_composer_basic.md) | [次に進む](./04_composer_luis.md)  
 [目次に戻る](../README.md)
