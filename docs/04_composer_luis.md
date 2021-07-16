@@ -1,8 +1,8 @@
 # Language Understanding でユーザーの意図を予測
 
-[前のステップ](05_composer_qna.md) で、QnA Maker を使った Q&A 機能を Bot アプリケーションに 追加しました。
+[前のステップ](05_composer_qna.md) では正規表現を利用してユーザー入力の意図を理解しました。
 
-このステップでは、[**Language Understanding** (LUIS)](https://azure.microsoft.com/ja-jp/services/cognitive-services/language-understanding-intelligent-service/) を使って、ユーザーの意図を予測するように変更します。  
+このステップでは、[**Language Understanding** (LUIS)](https://azure.microsoft.com/ja-jp/services/cognitive-services/language-understanding-intelligent-service/) を利用して、より柔軟で強力にユーザーの意図を予測するように変更します。  
 （[Bot Framework Composer の基礎 - 2](03_composer_basic2.md) では、**正規表現** でユーザーの意図を認識しました）
 
 [1. Recognizer Type の変更](#recognizer-type-の変更)  
@@ -24,13 +24,15 @@ Language Understanding (LUIS) とは、自然言語による入力に対して�
 
 > このハンズオンでは、ヘルプを呼び出す範囲でのみ Language Understanding を使用するので機能が実感しづらいですが、実装手順を理解することを目的とします。
 
+<br />
+
 ---
 
 ## Recognizer Type の変更
 
 "MyQnaBot" の **Recognizer Type** (＝ユーザー意図の識別方法) は、[Bot Framework Composer の基礎 - 2](./03_composer_basic2.md) では "Regular expression recognizer" にしました。
 
-ここで "Default recognizer" (= Language Understanding 利用) に変更して、もう少し自然な言語処理でユーザー意図を識別するように変更します。
+ここで "Default recognizer" (= Language Understanding 利用) に変更して、もう少し柔軟な自然言語処理でユーザー意図を予測するように変更します。
 
 <br />
 
@@ -38,11 +40,13 @@ Language Understanding (LUIS) とは、自然言語による入力に対して�
    
    <img src="./images/04/bfcomp_set_rectype.jpg" width="540px" />  
 
+<br />
+
 ---
 
 ## Language Understanding の設定
 
-Bot Framework Composer の設定画面で QnA Maker のセットアップを行います。
+Bot Framework Composer の設定画面で Language Understanding のセットアップを行います。
 
 1. [**Configure**] - [**Development resources**] を開いて [**Set up Language Understanding**] をクリックします。  
    
@@ -91,7 +95,7 @@ Help ダイアログにコンテキストを切り替える契機となるフレ
 
 <br />
 
-2. Property の [**Trigger Phrases**] に以下の入力をします。
+2. Property の [**Trigger phrases**] に以下の入力をします。
 
    ```txt
    - Help
@@ -106,15 +110,15 @@ Help ダイアログにコンテキストを切り替える契機となるフレ
 
    <br />
 
-   "Trigger Phrases" では、類義語を登録したり、英語・日本語を組み合わせると認識精度が上がることがあります。  
+   "Trigger phrases" では、類義語を使用した別のフレーズを登録したり、英語と日本語とを組み合わせるなどをすると認識精度が上がることがあります。  
    例えば  
 
    - "使い方" と "機能"
    - "help" と "ヘルプ"
    - "Bot" と "ボット"  
 
-   などです。  
-   こうすると "このボットの使い方" や "Botの機能を教えて" などの日本語の表現の揺らぎを吸収してくれます。
+   などを使います。  
+   こうすると "このボットの使い方" や "Botの機能を教えて" などの日本語（自然言語）の表現の揺らぎを吸収してくれます。
 
 <br />
 
@@ -146,7 +150,8 @@ Help ダイアログにコンテキストを切り替える契機となるフレ
 
 <br />
 
-6. ほかの例文にも同様の操作でエンティティを設定します。  
+6. ほかの例文にも同様の操作でエンティティを設定します。
+   以下はエンティティも含めた Trigger phrases 全体です。  
 
    > \- {Action = Help}  
    > \- {Action = ヘルプ}  
@@ -154,6 +159,10 @@ Help ダイアログにコンテキストを切り替える契機となるフレ
    > \- {Bot = Bot}の{Action = 機能}  
    > \- この{Bot = ボット}で何が{Action = 出来る}の  
    > \- {Bot = あなた}の{Action = 機能}について教えて
+   >
+   > @ ml Action
+   >
+   > @ ml Bot
 
    
    <img src="./images/04/bfcomp_labeled_all_entities.jpg" width="540px" />
@@ -181,8 +190,10 @@ Help ダイアログにコンテキストを切り替える契機となるフレ
    > それ以下の場合は、ユーザーの入力は "Help" 以外で処理されます。(現在は "Unknown intent" のみ)  
    >
    > 上で指定した 94% という数値は中途半端な値に思えるかもしれません。  
-   > この後の方法で動作確認をしたところ、閾値として適切な値になったため、今回は 94% にしました。  
+   > この後の方法で動作確認をしたところ、子のハンズオンを作成時には閾値として適切な値になったために今回は 94% にしました。  
    > Language Understanding のスコアは随時変更される可能性があるので、その場合はより適切な予測ができる値に変更してください。
+
+ <br />
 
 ---
 
@@ -212,10 +223,9 @@ Help ダイアログにコンテキストを切り替える契機となるフレ
 
 ---
 
-以上で Language Understanding と QnA Maker とを組み合わせて利用できるようになりました。  
-Q&A Bot アプリケーションを開発は完了です。
+以上で Language Understanding を利用してユーザーの意図を予測できるようになりました。
 
-次のステップでは、作成したアプリケーションを Azure に発行します。
+次のステップでは QnA Maker と連携して、FAQ ボットの機能を追加します。
 
 [前に戻る](./03_composer_basic2.md) | [次に進む](./05_create_knowledgebase.md)  
 [目次に戻る](../README.md)
