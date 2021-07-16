@@ -2,13 +2,15 @@
 
 [前のステップ](./01_install.md) で Bot Framework Composer と他のツールのインストールが終わりました。
 
-このステップでは、Bot Framework Composer の "基礎" として **Echo bot** (オウム返し Bot) を作ります。
+このステップでは、Bot Framework Composer の基礎として **Echo bot** (オウム返し Bot) を作ります。
 
 [1. 新規プロジェクト作成](#%e6%96%b0%e8%a6%8f%e3%83%97%e3%83%ad%e3%82%b8%e3%82%a7%e3%82%af%e3%83%88%e4%bd%9c%e6%88%90)  
 [2. Bot 言語を変更](#bot-言語を変更)  
 [3. あいさつメッセージを変更](#あいさつメッセージを変更)  
 [4. オウム返しアクションを追加](#オウム返しアクションを追加)  
 [5. Web Chat で実行](#web-chat-で実行)
+
+<br />
 
 ---
 
@@ -47,8 +49,12 @@ Bot Framework Composer をインストールしていない場合は、[前の�
 
    <img src="./images/02/bfcomp_project_created.jpg" width="480px" />
 
+   <br />
+
    > プロジェクト作成後に [Creation Journey] が表示されるかもしれません。興味がある方は Composer の使い方を覚えるために参照してください。  
    > 不要であれば [×] で閉じてしまってもかまいません。  
+
+<br />
 
 ---
 
@@ -101,6 +107,8 @@ Bot Framework Composer をインストールしていない場合は、[前の�
    >
    > 再起動しないままで開発を続けるとローカルでのビルドに失敗することがあります。その場合は Composer を一度閉じると正常に動作するようになります。
 
+<br />
+
 ---
 
 ## あいさつメッセージを変更
@@ -131,7 +139,11 @@ Greeting はユーザーが対話に参加した時に自動的に呼び出さ�
    
    <img src="./images/02/bfcomp_greeting_resp.jpg" width="480px" />
 
+   <br />
+
    > 今のステップではまだオウム返し Bot ですが、あとでの手順に備えて "Greeting" で返すメッセージをあいさつにしておきます。
+
+<br />
 
 ---
 
@@ -183,6 +195,8 @@ EmptyBot テンプレートではトリガーとして "Greeting" と "Unknown i
    "**${turn.activity.text}**" はユーザーが入力した内容です。  
    これでオウム返しするようになりました。確認してみます。
 
+<br />
+
 ---
 
 ## Web Chat で実行
@@ -224,6 +238,8 @@ Bot Framework Composer 組み込みの **Web Chat** で Bot の動作を確認�
 <br />
 
 Bot は期待通りに動作しました。
+
+<br />
 
 ---
 
