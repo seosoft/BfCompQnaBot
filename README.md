@@ -7,12 +7,17 @@
 3. [Bot Framework Composer の基礎 - 2 (機能追加)](./docs/03_composer_basic2.md)  
 4. [Language Understanding でユーザーの意図を予測](./docs/04_composer_luis.md)　　
 5. [ナレッジベース作成](./docs/05_create_knowledgebase.md)  
-6. [Q&A 機能の呼び出しとサジェスチョンの実装](./docs/06_test_qnatrigger.md)  
-7. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)  
+6. [QnA Maker のナレッジベースの呼び出し](./docs/06_test_qnatrigger.md)  
+7. [操作性の向上](./docs/07_help_and_suggestion.md)
+8. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)  
   
-8. [付録 A) QnA Maker でナレッジベース作成](./docs/ap01_create_qnamaker_kb.md)
+9. [(参考) QnA Maker ポータルでナレッジベース作成](./docs/ap01_create_qnamaker_kb.md)
+
+<br />
 
 > このハンズオンでは [**Bot Framework Composer v2.0.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2021-conversational-ai-update/ba-p/2375203) を使用しています。 
+
+<br />
 
 ---
 
@@ -28,6 +33,8 @@ Bot Framework Composer は、Bot アプリケーションを GUI で開発でき
 - Power Virtual Agents との連携
 
 Bot Framework Composer の公式ドキュメントは [**こちら**](https://docs.microsoft.com/ja-jp/composer/) です。
+
+<br />
 
 ---
 
