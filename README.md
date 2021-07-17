@@ -10,8 +10,6 @@
 6. [QnA Maker のナレッジベースの呼び出し](./docs/06_test_qnatrigger.md)  
 7. [操作性の向上](./docs/07_help_and_suggestion.md)
 8. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)  
-  
-9. [(参考) QnA Maker ポータルでナレッジベース作成](./docs/ap01_create_qnamaker_kb.md)
 
 <br />
 

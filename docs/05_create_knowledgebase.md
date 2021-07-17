@@ -16,8 +16,7 @@
 
 <br />
 
-QnA Maker のナレッジベースは、QnA Maker ポータルで作成して Composer から接続する方法もあります。  
-これについては [付録](./ap01_create_qnamaker_kb.md) で手順を紹介します。
+> QnA Maker のナレッジベースは、QnA Maker ポータルで作成して Composer から接続する方法もあります。  
 
 <br />
 
