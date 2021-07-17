@@ -9,7 +9,7 @@
 5. [ナレッジベース作成](./docs/05_create_knowledgebase.md)  
 6. [QnA Maker のナレッジベースの呼び出し](./docs/06_test_qnatrigger.md)  
 7. [操作性の向上](./docs/07_help_and_suggestion.md)
-8. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)  
+8. [Bot アプリケーションをクラウドに発行](./docs/08_deploy_bot.md)  
 
 <br />
 
