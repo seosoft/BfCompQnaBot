@@ -30,7 +30,7 @@ Bot Framework Composer は、Bot アプリケーションを GUI で開発でき
 - 外部サービスの利用で機能拡張が可能
 - Power Virtual Agents との連携
 
-Bot Framework Composer の公式ドキュメントは [**こちら**](https://docs.microsoft.com/ja-jp/composer/) です。
+Bot Framework Composer の公式ドキュメントは [**こちら**](https://aka.ms/bfc-doc) です。
 
 <br />
 
