@@ -1,6 +1,6 @@
 # Bot Framework Composer + QnA Maker で作る Q&A チャットボット ハンズオン
 
-このハンズオンでは、[**Bot Framework Composer**](https://docs.microsoft.com/ja-jp/composer/) + [**QnA Maker**](https://www.qnamaker.ai/) を使って Q&A チャットボットを作成します。
+このハンズオンでは、[**Bot Framework Composer**](https://aka.ms/bfc-doc) + [**QnA Maker**](https://www.qnamaker.ai/) を使って Q&A チャットボットを作成します。
 
 1. [開発環境の構築](./docs/01_install.md)
 2. [Bot Framework Composer の基礎 - 1 (Echo Bot)](./docs/02_composer_basic.md)
@@ -9,7 +9,7 @@
 5. [ナレッジベース作成](./docs/05_create_knowledgebase.md)  
 6. [QnA Maker のナレッジベースの呼び出し](./docs/06_test_qnatrigger.md)  
 7. [操作性の向上](./docs/07_help_and_suggestion.md)
-8. [Bot アプリケーションをクラウドに発行](./docs/07_deploy_bot.md)  
+8. [Bot アプリケーションをクラウドに発行](./docs/08_deploy_bot.md)  
 
 <br />
 

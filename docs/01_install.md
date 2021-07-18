@@ -1,6 +1,6 @@
 # 開発環境の構築
 
-ハンズオンの最初に [**Bot Framework Composer**](https://docs.microsoft.com/ja-jp/composer/) で Bot 開発のための環境を構築します。
+ハンズオンの最初に [**Bot Framework Composer**](https://aka.ms/bfc-doc/) で Bot 開発のための環境を構築します。
 
 このハンズオンでは、[**Bot Framework Composer v2.0.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2021-conversational-ai-update/ba-p/2375203) を使用します。  
 ハンズオン実施の時期によっては画面の構成などが一部異なる可能性があります。
