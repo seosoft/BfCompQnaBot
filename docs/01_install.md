@@ -84,8 +84,8 @@ Windows 版、macOS 版、Linux 版が用意されています。
    [**ngrok**](https://ngrok.com/download) をダウンロードして、ZIP ファイル内の "ngrok.exe" をローカル PC の任意のフォルダーにコピーします。  
    インストーラーはないので exe ファイルをコピーするだけです。パスが通ったフォルダーでなくてもかまいません。  
 
-   ngrok は [ステップ 6](06_composer_luis.md) までの Bot アプリケーション開発の範囲では不要です。  
-   [ステップ 7](07_deploy_to_azure.md) で Bot アプリケーションを Azure に発行したあとの動作確認に使用します。
+   ngrok は [ステップ 7](./07_help_and_suggestion.md) までの Bot アプリケーション開発の範囲では不要です。  
+   [ステップ 8](./08_deploy_bot.md) で Bot アプリケーションを Azure に発行したあとの動作確認に使用します。
 
    <br />
 
