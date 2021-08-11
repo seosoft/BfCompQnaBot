@@ -95,6 +95,15 @@ Windows 版、macOS 版、Linux 版が用意されています。
 
 <br />
 
+> 環境によっては、上記の手順で構築しても Bot Framework Composer が **正常に動作しない** ことがあるようです。([tfukumori](https://github.com/tfukumori) さん、情報ありがとうございます)  
+> 具体的には Composer が ["**Starting Server**" のままで起動しない](https://github.com/microsoft/BotFramework-Composer/issues/7964) ことがあります。  
+> 
+> この場合は、[**Visual C++ 再頒布可能ファイル**](https://aka.ms/vs/16/release/vc_redist.x64.exe) を追加でインストールすることで正常に起動するようになります。  
+>
+> この後のステップで Composer が正常に起動しない場合は実施してください。
+
+<br />
+
 以上で、Bot アプリケーション開発環境の構築は完了です。  
 
 <br />
