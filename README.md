@@ -13,7 +13,7 @@
 
 <br />
 
-> このハンズオンでは [**Bot Framework Composer v2.0.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2021-conversational-ai-update/ba-p/2375203) を使用しています。 
+> このハンズオンでは [**Bot Framework Composer v2.1.0**](https://techcommunity.microsoft.com/t5/azure-ai/build-2021-conversational-ai-update/ba-p/2375203) を使用しています。 
 
 <br />
 
